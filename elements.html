@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Awaaz - Elements</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/ico" href="images/favicon.ico" />
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Dosis:400,500,600,700' rel='stylesheet' type='text/css' />
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+
+	<!-- Javascript Files -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/scripts.js"></script>
+	
+</head>
+<body>
+
+	<!-- TOP-BAR -->
+	<div id="top-bar">
+		<div class="container">
+			<div id="site-description">Welcome to Awaaz music theme.</div>
+			<ul id="top-links">
+				<li class="login"><a href="#"><i class="fa fa-lock"></i><span>Login</span></a></li>
+				<li class="register"><a href="#"><i class="fa fa-user"></i><span>Register</span></a></li>
+				<li class="facebook"><a href="#"></a></li>
+				<li class="twitter"><a href="#"></a></li>
+				<li class="google-plus"><a href="#"></a></li>
+				<li class="youtube"><a href="#"></a></li>
+				<li class="search">
+					<input type="text" value="" name="search" id="top-search" />		
+					<a href="#"></a>
+				</li>
+			</ul><!-- end top-links -->
+		</div><!-- end container -->
+	</div> <!-- end top-bar -->
+
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Logo and toggle for navigation on mobile devices -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Awaaz" /></a>
+				</div>
+
+				<!-- Navigation links -->
+				<div class="collapse navbar-collapse" id="main-nav">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="current"><a href="index.html">Home</a></li>
+						<li class="dropdown">
+							<a href="artists.html" class="dropdown-toggle disabled" data-toggle="dropdown">Artist <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="artists.html">Artists Overview</a></li>
+								<li><a href="artist.html">Artist Single</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown">Album <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="albums.html">Albums Overview</a></li>
+								<li><a href="album.html">Album Single</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="blog.html" class="dropdown-toggle disabled" data-toggle="dropdown">Blog <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="blog.html">Blog Regular</a></li>
+								<li><a href="blog-single.html">Blog Single</a></li>
+								<li><a href="blog-grid.html">Blog Grid</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="events.html" class="dropdown-toggle disabled" data-toggle="dropdown">Events <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="events.html">Events Overview</a></li>
+								<li><a href="event-details.html">Event Details 1</a></li>
+								<li><a href="event-details-2.html">Event Details 2</a></li>
+								<li><a href="event-countdown.html">Event Countdown</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Pages <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="404.html">404 Page</a></li>
+								<li><a href="gallery.html">Galleries</a></li>
+								<li><a href="video.html">Videos</a></li>
+								<li><a href="typography.html">Typography</a></li>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="tables.html">Tables</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+
+	<section id="breadcrumbs">
+		<div class="container"><a href="index.html">Home</a> <i class="fa fa-angle-double-right"></i> Elements</div>
+	</section>
+
+	<section id="tagline">
+		<div class="container">
+			<h1>Elements</h1>
+			<h4>Commodo sollicitudin mi ligula bibendum sem</h4>
+		</div>
+	</section>
+
+	<!-- main content area -->
+	<main>
+		<section id="content">
+			<div class="container">
+				<h2>Buttons</h2>
+				<h4 class="margin">Outline Buttons Colored</h4>
+				<div class="row margin">
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-lg btn-outline btn-colored">Colored Outline</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-outline btn-colored">Colored Outline</a>
+					</div>
+					<div class="clearfix visible-sm"></div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-sm btn-outline btn-colored">Colored Outline</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-xs btn-outline btn-colored">Colored Outline</a>
+					</div>
+				</div>
+				<div class="row margin">
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-lg btn-outline">Gray Outline</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-outline">Gray Outline</a>
+					</div>
+					<div class="clearfix visible-sm"></div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-sm btn-outline">Gray Outline</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-xs btn-outline">Gray Outline</a>
+					</div>
+				</div>
+				<h4 class="margin">Regular Buttons</h4>
+				<div class="row margin">
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-lg btn-green">Large button</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-green">Normal button</a>
+					</div>
+					<div class="clearfix visible-sm"></div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-sm btn-green">Small button</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-xs btn-green">Extra small button</a>
+					</div>
+				</div>
+				<div class="row margin">
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-lg btn-colored">Large button</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-colored">Normal button</a>
+					</div>
+					<div class="clearfix visible-sm"></div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-sm btn-colored">Small button</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-xs btn-colored">Extra small button</a>
+					</div>
+				</div>
+				<div class="row margin">
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-lg btn-gray">Large button</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-gray">Normal button</a>
+					</div>
+					<div class="clearfix visible-sm"></div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-sm btn-gray">Small button</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="#" class="btn btn-xs btn-gray">Extra small button</a>
+					</div>
+				</div>
+				<div class="row margin">
+					<div class="col-md-6">
+						<h2>Accordion</h2>
+						<div class="panel-group" id="accordion">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="open">
+											Collapsible Group Item #1
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<h5 class="colored">Some title here</h5>
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+											Collapsible Group Item #2
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse">
+									<div class="panel-body">
+										<h5 class="colored">Some title here</h5>
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+											Collapsible Group Item #3
+										</a>
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse">
+									<div class="panel-body">
+										<h5 class="colored">Some title here</h5>
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h2>Toggle</h2>
+						<div class="panel-group toggle" id="toggle">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#toggle" href="#toggleOne" class="open">
+											Toggle Item #1
+										</a>
+									</h4>
+								</div>
+								<div id="toggleOne" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<h5 class="colored">Title #1</h5>
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#toggle" href="#toggleTwo">
+											Toggle Item #2
+										</a>
+									</h4>
+								</div>
+								<div id="toggleTwo" class="panel-collapse collapse">
+									<div class="panel-body">
+										<h5 class="colored">Title #2</h5>
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#toggle" href="#toggleThree">
+											Toggle Item #3
+										</a>
+									</h4>
+								</div>
+								<div id="toggleThree" class="panel-collapse collapse">
+									<div class="panel-body">
+										<h5 class="colored">Title #3</h5>
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="border">Tabs</h2>
+				<div class="row margin">
+					<div class="col-md-6">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#simple1" data-toggle="tab">Simple #1</a></li>
+							<li><a href="#simple2" data-toggle="tab">Simple #2</a></li>
+							<li><a href="#simple3" data-toggle="tab">Simple #3</a></li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="simple1">
+								<p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, also the leap into electronic.</p>
+								<p>Typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
+								<p>It was popularised in the 1960s with the release of Letraset sheets containing .</p>
+							</div>
+							<div class="tab-pane fade" id="simple2">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit, est at vulputate suscipit, ante leo consectetur neque, id viverra lectus nibh nec lacus. Sed mauris dui, commodo nec pulvinar nec, tincidunt non purus.</p>
+							</div>
+							<div class="tab-pane fade" id="simple3">
+								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs outline-nav-tabs">
+							<li class="active"><a href="#outline1" data-toggle="tab">Outline #1</a></li>
+							<li><a href="#outline2" data-toggle="tab">Outline #2</a></li>
+							<li><a href="#outline3" data-toggle="tab">Outline #3</a></li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content outline-tab-content">
+							<div class="tab-pane fade in active" id="outline1">
+								<p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, also the leap into electronic.</p>
+								<p>Typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
+								<p>It was popularised in the 1960s with the release of Letraset sheets containing .</p>
+							</div>
+							<div class="tab-pane fade" id="outline2">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit, est at vulputate suscipit, ante leo consectetur neque, id viverra lectus nibh nec lacus. Sed mauris dui, commodo nec pulvinar nec, tincidunt non purus.</p>
+							</div>
+							<div class="tab-pane fade" id="outline3">
+								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="border">Notifications</h2>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="alert alert-success">
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times"></i></button>
+							Well done! You successfully read this important alert message.
+						</div>
+						<div class="alert alert-info">
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times"></i></button>
+							Heads up! This alert needs your attention, but it's not super important.
+						</div>
+						<div class="alert alert-warning">
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times"></i></button>
+							Warning! Best check yo self, you're not looking too good.
+						</div>
+						<div class="alert alert-danger">
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times"></i></button>
+							Oh snap! Change a few things up and try submitting again.
+						</div>
+						<div class="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times"></i></button>
+							This is just a regular notofications message.
+						</div>
+					</div>
+				</div>
+				<h2 class="border">Pagination</h2>
+				<div class="row">
+					<div class="col-xs-12">
+
+					</div>
+				</div>
+				<p>Style 1</p>
+				<div class="row margin pagination-style-1">
+					<div class="col-sm-2">
+						<a href="#" class="prev">Previous</a>
+					</div>
+					<div class="col-sm-8">
+						<ul class="pagination">
+							<li class="current"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<a href="#" class="next">Next</a>
+					</div>
+				</div>
+				<p>Style 2</p>
+				<div class="row margin pagination-style-2">
+					<div class="col-sm-2">
+						<a href="#" class="prev">Previous</a>
+					</div>
+					<div class="col-sm-8">
+						<ul class="pagination">
+							<li class="current"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<a href="#" class="next">Next</a>
+					</div>
+				</div>
+				<p>Style 3</p>
+				<div class="row margin pagination-style-3">
+					<div class="col-sm-2">
+						<a href="#" class="prev"><i class="fa fa-angle-double-left"></i></a>
+					</div>
+					<div class="col-sm-8">
+						<ul class="pagination">
+							<li class="current"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-2">
+						<a href="#" class="next"><i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main> <!-- end main content area -->
+
+	<!-- footer -->
+	<footer>
+		<!-- go to top --> 
+		<div class="container gototop">
+			<a href="#top">Go To Top</a><i class="fa fa-chevron-up"></i>
+		</div>
+
+		<!-- footer widgets -->
+		<div class="container">
+			<div class="row">
+				<div class="footer-col col-sm-6 col-md-3">
+					<h3>About Awaaz</h3>
+					<p>Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Donec semper quam scelerisque.</p>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+				</div>
+				<div class="footer-col col-sm-6 col-md-3">
+					<h3><i class="fa fa-twitter"></i> Twitter</h3>
+					<ul class="tweets">
+						<li>
+							In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit <a href="#">http://t.co/yY7s1IfrAb</a> <a href="#">2 days ago</a>
+						</li>
+						<li>
+							<span>RT</span> <a href="#">@JhonDoe:</a> Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est <a href="#">http://t.co/HMOeUv5BaD</a> <a href="#">8 days ago</a>
+						</li>
+						<li>
+							<span>RT</span> <a href="#">@tommcfarlin:</a> onec semper quam scelerisque tortor dictum gravida. <a href="#">http://t.co/HMOeUv5BaD</a> <a href="#">8 days ago</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col col-sm-6 col-md-3">
+					<h3><i class="fa fa-link"></i> Quick Links</h3>
+					<div class="row">
+						<div class="col-xs-6 links-col">
+							<ul class="links">
+								<li><a href="#">News</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Events</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-6 links-col">
+							<ul class="links">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Shortcodes</a></li>
+								<li><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Calendar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-col col-sm-6 col-md-3">
+					<h3><i class="fa fa-envelope"></i> Newsletter</h3>	
+					<p>Arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh elit.</p>
+					<form action="#" name="subscribe-form" class="subscribe-form">
+						<input type="email" value="" name="email" class="email" />
+						<input type="submit" value="Submit" name="submit" class="submit" />
+					</form>
+				</div>
+			</div>
+		</div> <!-- end footer widgets -->
+
+		<div class="container bottom-footer">
+			<div class="row">
+				<!-- copyright notice -->
+				<div class="col-md-5 col-sm-6 copyright">
+					&copy; 2013 Awaaz. All rights reserved.
+				</div>
+
+				<div class="col-md-2 love">
+					<i class="fa fa-heart"></i> Love this theme.
+				</div>
+
+				<!-- social links -->
+				<div class="col-md-5 col-sm-6">
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype"></i></a></li>
+						<li><a href="#"><i class="fa fa-flickr"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer> <!-- end footer -->
+
+</body>
+</html>

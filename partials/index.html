@@ -1,0 +1,27 @@
+
+	<!-- main content area -->
+	<main>
+		<section id="content">
+			<div class="container">
+				<div class="row">
+					<div class=""></div>
+					<!-- blog area -->
+					<div class="col-sm-8 col-sm-push-2">
+						<div class="post" ng-repeat="new in news">
+							<h3><a href="blog-single.html">{{new.titre}}</a></h3>
+							<div class="post-meta">
+								<span class="date"><i class="fa fa-calendar"></i> {{new.created_at}}</span>
+							</div>
+							<div class="post-image">
+								<img ng-src="{{new.image_url}}" alt="Nulla rutrum felis eu interdum" />
+							</div>
+							<div class="post-content">
+								<p ng-bind-html="new.texte"></p>
+								<a href="#" class="read-more">Read More</a><i class="fa fa-angle-double-right read-more-icon"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main> <!-- end main content area -->
