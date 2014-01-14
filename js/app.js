@@ -4,7 +4,7 @@
 
 var App = angular.module('fdlmApp', [
 	'ngRoute',
-	
+	'ngSanitize',
 	'appControllers',
 	'appServices'
 ]);
@@ -21,6 +21,9 @@ App.config(['$routeProvider',
 			}).
 			when('/archive-faites-de-la-musique-fdlm-2013', {
 				templateUrl: 'partials/archive.html'
+			}).
+			when('/association-faites-de-la-musique', {
+				templateUrl: 'partials/association.html'
 			}).
 			when('/contact', {
 				templateUrl: 'partials/contact.html'

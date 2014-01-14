@@ -15,7 +15,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Dosis:400,500,600,700' rel='stylesheet' type='text/css' />
 
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="css/main.css" />
@@ -48,6 +48,7 @@
 			'lib/angular/angular-animate.js',
 			'lib/angular/angular-resource.js',
 			'lib/angular/angular-route.js',
+			'lib/angular/angular-sanitize.js',
 			'js/app.js',
 			'js/services.js',
 			'js/controllers.js',
@@ -69,27 +70,25 @@
 </head>
 <body ng-cloak class="ng-cloak">
 	<header>
-		<nav class="navbar navbar-default" role="navigation">
+		<nav class="navbar">
 			<div class="container">
-				<!-- Logo and toggle for navigation on mobile devices -->
-				<div class="navbar-header" ng-controller="TemplateCtrl">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html"><img ng-src="{{general_info.logo_url}}" alt="Awaaz" /></a>
+				<div class="row">
+				    <div class="span4 offset2 navbar-header hidden-phone" ng-controller="TemplateCtrl">
+						<a class="navbar-brand" href="#/"><img ng-src="{{general_info.logo_url}}" alt="FDLM" /></a>
+					</div>
+			        <div class="span8 align-right" id="menu">
+				        <div style="margin-top: 0px;" class="navbar" ng-controller="MenuCtrl" id="main-nav">
+				        	<ul class="nav">
+								<li ng-repeat="item in menu">
+									<a href="{{item.url}}">{{item.nom}}</a>
+								</li>
+				            									
+			                </ul>
+		                </div>
+			        	<div>
+						</div>
+					</div>
 				</div>
-
-				<!-- Navigation links -->
-				<div class="collapse navbar-collapse" id="main-nav" ng-controller="MenuCtrl">
-					<ul class="nav navbar-nav navbar-right" nav-menu="active">
-						<li ng-repeat="item in menu">
-							<a href="{{item.url}}">{{item.nom}}</a>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
 			</div>
 		</nav>
 	</header>
@@ -102,17 +101,13 @@
 		<footer>
 
 			<div class="container bottom-footer" ng-controller="TemplateCtrl">
-				<div class="row">
+				<div class="row-fluid">
 					<!-- copyright notice -->
-					<div class="col-md-5 col-sm-6 copyright">
+					<div class="span3 offset1 copyright">
 						{{general_info.copyrights}}
 					</div>
-
-					<div class="col-md-2">
-					</div>
-
 					<!-- social links -->
-					<div class="col-md-5 col-sm-6">
+					<div class="span8">
 						<ul class="social">
 							<li ng-show="general_info.facebook"><a href="{{general_info.facebook_url}}"><i class="fa fa-facebook"></i></a></li>
 							<li ng-show="general_info.twitter"><a href="{{general_info.twitter_url}}"><i class="fa fa-twitter"></i></a></li>

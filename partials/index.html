@@ -3,22 +3,41 @@
 	<main>
 		<section id="content">
 			<div class="container">
+				<div class="row-fluid">
+					<div class="event-countdown  span12">
+						<h3>Notre festival ouvre ses portes les 15 juin & 16 juin 2014</h3>
+						<div id="countdown"></div>
+						<h4 class="time-units">
+							<span>Jours</span>
+							<span>Heures</span>
+							<span>Min</span>
+							<span>Sec</span>
+						</h4>
+						<a href="#/programmation-malegoude-faites-de-la-musique" class="buy-ticket">Découvrir la line up</a>
+					</div>
+				</div>
+				<script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+				<script type="text/javascript">
+					$('#countdown').countdown({
+						timestamp	: new Date(2014, 6, 15), // year, month (starting at 0), day
+						callback	: function(days, hours, minutes, seconds) {
+							updateTime('#countdown', days, hours, minutes, seconds);
+						}
+					});
+				</script>
 				<div class="row">
-					<div class=""></div>
 					<!-- blog area -->
-					<div class="col-sm-8 col-sm-push-2">
-						<div class="post" ng-repeat="new in news">
-							<h3><a href="blog-single.html">{{new.titre}}</a></h3>
-							<div class="post-meta">
-								<span class="date"><i class="fa fa-calendar"></i> {{new.created_at}}</span>
-							</div>
-							<div class="post-image">
-								<img ng-src="{{new.image_url}}" alt="Nulla rutrum felis eu interdum" />
-							</div>
-							<div class="post-content">
-								<p ng-bind-html="new.texte"></p>
-								<a href="#" class="read-more">Read More</a><i class="fa fa-angle-double-right read-more-icon"></i>
-							</div>
+					<div class="span8 offset2 post" ng-repeat="new in news">
+						<h3>{{new.titre}}</h3>
+						<div class="post-meta">
+							<span class="date"><i class="fa fa-calendar"></i> {{new.created_at}}</span>
+						</div>
+						<div class="post-image">
+							<img ng-src="{{new.image_url}}" alt="Nulla rutrum felis eu interdum" />
+						</div>
+						<div class="post-content">
+							<p ng-bind-html="new.texte"></p>
 						</div>
 					</div>
 				</div>
