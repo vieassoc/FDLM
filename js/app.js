@@ -4,7 +4,6 @@
 
 var App = angular.module('fdlmApp', [
 	'ngRoute',
-	'ngSanitize',
 	'appControllers',
 	'appServices'
 ]);

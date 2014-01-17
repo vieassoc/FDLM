@@ -2,7 +2,9 @@
 
 /* Controllers */
 
-var appControllers = angular.module('appControllers', ['ngSanitize']);
+var appControllers = angular.module('appControllers', [
+  'ngSanitize'
+  ]);
 
 appControllers.controller('NewsListCtrl', ['$scope', 'News', 'Menu', 'Gallery',
   function($scope,News,Menu,Gallery) {
