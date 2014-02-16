@@ -1,99 +1,237 @@
-<!-- main content area -->
-<main>
-	<section id="content">
-		<div class="container">
-			<div class="row">
-				<div class="span10 offset1 contact-desc center">
-					<p>Nullam eu lectus et tellus malesuada bibendum sed a nisl. Praesent iaculis sem nisi, sed molestie est ullamcorper vitae. Praesent ac tincidunt eros. Duis eget urna convallis, faucibus magna vel, auctor justo. Proin et scelerisque dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div id="contact-map-container">
-					<div id="contact-map"></div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="span5 offset1">
-					<h2>Contactez nous par email</h2>
-					<form action="http://templates.brentchesny.com/awaaz/red/mail.php" method="post" name="contact-form" id="contact-form">
-						<label for="name">Votre nom <span>*</span></label>
-						<input type="text" name="name" id="name" value="" required />
-						<label for="email">Votre E-Mail <span>*</span></label>
-						<input type="email" name="email" id="email" value="" required />
-						<label for="email">Sujet</label>
-						<input type="text" name="subject" id="subject" value="" />
-						<label for="message">Votre message</label>
-						<textarea name="message" id="message"></textarea>
-						<div class="row">
-							<div class="col-sm-6">
-								<input type="submit" name="sendmessage" id="sendmessage" value="Envoyer le message" />
+<!-- page: CONTACT -->
+<section id="contact" class="l-section">
+	
+	<div class="l-subsection color_dark" style="background-image:url(img/placeholder/parallax.png);">
+		<div class="l-subsection-h">
+			<div class="l-subsection-hh g-html i-cf">
+			
+				<h2><strong>Contact Us</strong></h2>
+				
+				<div class="w-contacts">
+					<div class="w-contacts-h">
+						<div class="w-contacts-list">
+							<div class="w-contacts-item">
+								<i class="fa fa-map-marker"></i>
+								<span class="w-contacts-item-value">1600 Amphitheatre Parkway, Mountain View, CA 94043, United States</span>
 							</div>
-							<div class="col-sm-6 dynamic"></div>
+							<br>
+							<div class="w-contacts-item">
+								<i class="fa fa-phone"></i>
+								<span class="w-contacts-item-value">+321 123 456 7</span>
+							</div>
+							<div class="w-contacts-item">
+								<i class="fa fa-envelope-o"></i>
+								<span class="w-contacts-item-value"><a href="mailto:info@example.com">info@example.com</a></span>
+							</div>
 						</div>
-					</form>
-				</div>
-				<div class="span5 offset1">
-					<h2>Adresse de contact</h2>
-					<div class="contact-details">
-						<div class="icon">
-							<i class="fa fa-4x fa-map-marker"></i>
-						</div>
-						<p>
-							Association Faites de la Musique,<br />
-							Ferme Gagnoulet,<br>
-							09500 Malegoude
-						</p>
-					</div>
-					<div class="contact-details">
-						<div class="icon">
-							<i class="fa fa-4x fa-envelope"></i>
-						</div>
-						<p>
-							fdlmteam@gmail.com<br />
-						</p>
 					</div>
 				</div>
+
 			</div>
-
 		</div>
-	</section>
-</main> <!-- end main content area -->
+	</div>
+	
+	<div class="l-subsection full_width full_height">
+		<div class="l-subsection-h">
+			<div class="l-subsection-hh g-html i-cf">
+			
+				<div class="w-map">
+					<div class="w-map-h" style="height: 360px;">
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
 
-<!-- google maps script -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&callback=initialize"></script>
-<script type="text/javascript" src="js/jquery.ui.map.full.min.js"></script>
-<script type="text/javascript">
+	<div class="l-subsection">
+		<div class="l-subsection-h">
+			<div class="l-subsection-hh g-html i-cf">
+			
+				<h4 class="highlight"><strong>Send a Message</strong></h4>
+				
+				<p class="size_big">We bring a personal and effective approach to every project we work on.</p>
 
-	function initialize() {
-	    var map;
-		var latlng = new google.maps.LatLng(43.110995,1.935181);
-		var mapOptions = {
-			'center': latlng,
-			'zoomControl': true,
-			'panControl': true,
-			'streetViewControl': false,	
-			'zoom': 8,
-			'scrollwheel': true,
-			'draggable': true,	
-			'mapTypeControl': true,	
-		};
+				<div class="w-form contacts_form">
+					<div class="w-form-h contacts_form_form">
+						<form class="g-form" action="#" method="post" id="contact_form">
+							<div class="g-form-row" id="name_row">
+								<div class="g-form-row-label">
+									<label class="g-form-row-label-h" for="name">Your Name</label>
+								</div>
+								<div class="g-form-row-field">
+									<i class="fa fa-user"></i>
+									<input type="text" name="name" id="name">
+								</div>
+								<div class="g-form-row-state" id="name_state"></div>
+							</div>
+							<div class="g-form-row" id="email_row">
+								<div class="g-form-row-label">
+									<label class="g-form-row-label-h" for="email">Email</label>
+								</div>
+								<div class="g-form-row-field">
+									<i class="fa fa-envelope"></i>
+									<input type="email" name="email" id="email">
+								</div>
+								<div class="g-form-row-state" id="email_state"></div>
+							</div>
+							<div class="g-form-row" id="phone_row">
+								<div class="g-form-row-label">
+									<label class="g-form-row-label-h" for="phone">Phone Number</label>
+								</div>
+								<div class="g-form-row-field">
+									<i class="fa fa-phone"></i>
+									<input type="text" name="phone" id="phone">
+								</div>
+								<div class="g-form-row-state" id="phone_state"></div>
+							</div>
+							<div class="g-form-row" id="message_row">
+								<div class="g-form-row-label">
+									<label class="g-form-row-label-h" for="message">Message</label>
+								</div>
+								<div class="g-form-row-field">
+									<i class="fa fa-pencil"></i>
+									<textarea name="message" id="message" cols="30" rows="10"></textarea>
+								</div>
+								<div class="g-form-row-state" id="message_state"></div>
+							</div>
+							<div class="g-form-row">
+								<div class="g-form-row-label"></div>
+								<div class="g-form-row-field">
+									<button class="g-btn type_primary" id="message_send"><span><i class="fa fa-envelope-o"></i>Send Message</span></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
 
-		map = new google.maps.Map(document.getElementById("contact-map"),
-			mapOptions);
+<!-- page: ABOUT -->
+<section id="about" class="l-section">
+	
 
-		var marker = new google.maps.Marker({
-			position: latlng,
-			title:"Salle des fêtes de Malegoude"
-		});
+	<div class="l-subsection color_alternate">
+		<div class="l-subsection-h">
+			<div class="l-subsection-hh g-html i-cf">
 
-		// To add the marker to the map, call setMap();
-		marker.setMap(map);
+				<p class="subtitle">What we do?</p>
+				<h3 class="highlight"><strong>Powerful websites that look beautiful</strong></h3>
+				
+				<div class="g-hr type_invisible"></div>
+				
+				<div class="g-cols">
+					<div class="one-third">
+					
+						<div class="w-iconbox iconpos_top with_circle">
+							<div class="w-iconbox-h">
+								<div class="w-iconbox-link">
+									<div class="w-iconbox-icon">
+										<i class="fa fa-rocket"></i>
+									</div>
+									<h4 class="w-iconbox-title">From Zero to One</h4>
+								</div>
+								<div class="w-iconbox-text">
+									<p>We are moving from zero to one, not from one to hundred. That means we are focused on creating new solutions, not copying the existing ones.</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="one-third">
+					
+						<div class="w-iconbox iconpos_top with_circle">
+							<div class="w-iconbox-h">
+								<div class="w-iconbox-link">
+									<div class="w-iconbox-icon">
+										<i class="fa fa-thumbs-up"></i>
+									</div>
+									<h4 class="w-iconbox-title">Our Level Up</h4>
+								</div>
+								<div class="w-iconbox-text">
+									<p>Working with us you will work with professional certified designers and engineers having the vast good experience.</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="one-third">
+					
+						<div class="w-iconbox iconpos_top with_circle">
+							<div class="w-iconbox-h">
+								<div class="w-iconbox-link">
+									<div class="w-iconbox-icon">
+										<i class="fa fa-heart"></i>
+									</div>
+									<h4 class="w-iconbox-title">Your satisfaction</h4>
+								</div>
+								<div class="w-iconbox-text">
+									<p>Creating a design it is not an end in itself, but a means. We understand the rules of the games. It’s about to make you happy.</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="g-hr type_invisible"></div>
+				
+				<a class="g-btn type_default" href="#portfolio"><span><i class="fa fa-arrow-down"></i>View Works</span></a>
+				
+			</div>
+		</div>
+	</div>
+</section>
 
-		google.maps.event.addDomListener(window, 'load', initialize);
-		google.maps.event.addDomListener(window, 'resize', function() {
-			map.setCenter(latlng);
-		});
-	}
-</script>
+<!-- page: SERVICES -->
+<section id="services" class="l-section">
+	
+	
+	<div id="parallax_subsection_2" class="l-subsection color_dark with_parallax" style="background-image:url(img/placeholder/parallax.png);">
+		<div class="l-subsection-h">
+			<div class="l-subsection-hh g-html i-cf">
+			
+				<h3>The people who have <strong>trusted</strong> us so far</h3>
+				
+				<div class="w-clients type_carousel columns_5">
+					<div class="w-clients-h">
+						<div class="w-clients-list">
+							<div class="w-clients-list-h">
+								<a class="w-clients-item" href="javascript:void(0);">
+									<img src="img/clogo6.png" alt="Client logo" />
+								</a>
+								<a class="w-clients-item" href="javascript:void(0);">
+									<img src="img/clogo2.png" alt="Client logo" />
+								</a>
+								<a class="w-clients-item" href="javascript:void(0);">
+									<img src="img/clogo3.png" alt="Client logo" />
+								</a>
+								<a class="w-clients-item" href="javascript:void(0);">
+									<img src="img/clogo4.png" alt="Client logo" />
+								</a>
+								<a class="w-clients-item" href="javascript:void(0);">
+									<img src="img/clogo5.png" alt="Client logo" />
+								</a>
+								<a class="w-clients-item" href="javascript:void(0);">
+									<img src="img/clogo2.png" alt="Client logo" />
+								</a>
+								<a class="w-clients-item" href="javascript:void(0);">
+									<img src="img/clogo1.png" alt="Client logo" />
+								</a>
+								<a class="w-clients-item" href="javascript:void(0);">
+									<img src="img/clogo3.png" alt="Client logo" />
+								</a>
+							</div>
+						</div>
+						<a class="w-clients-nav to_prev disabled" href="javascript:void(0)" title="Show previous"></a>
+						<a class="w-clients-nav to_next" href="javascript:void(0)" title="Show next"></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,99 @@
+<!-- main content area -->
+<main>
+	<section id="content">
+		<div class="container">
+			<div class="row">
+				<div class="span10 offset1 contact-desc center">
+					<p>Nullam eu lectus et tellus malesuada bibendum sed a nisl. Praesent iaculis sem nisi, sed molestie est ullamcorper vitae. Praesent ac tincidunt eros. Duis eget urna convallis, faucibus magna vel, auctor justo. Proin et scelerisque dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div id="contact-map-container">
+					<div id="contact-map"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="span5 offset1">
+					<h2>Contactez nous par email</h2>
+					<form action="http://templates.brentchesny.com/awaaz/red/mail.php" method="post" name="contact-form" id="contact-form">
+						<label for="name">Votre nom <span>*</span></label>
+						<input type="text" name="name" id="name" value="" required />
+						<label for="email">Votre E-Mail <span>*</span></label>
+						<input type="email" name="email" id="email" value="" required />
+						<label for="email">Sujet</label>
+						<input type="text" name="subject" id="subject" value="" />
+						<label for="message">Votre message</label>
+						<textarea name="message" id="message"></textarea>
+						<div class="row">
+							<div class="col-sm-6">
+								<input type="submit" name="sendmessage" id="sendmessage" value="Envoyer le message" />
+							</div>
+							<div class="col-sm-6 dynamic"></div>
+						</div>
+					</form>
+				</div>
+				<div class="span5 offset1">
+					<h2>Adresse de contact</h2>
+					<div class="contact-details">
+						<div class="icon">
+							<i class="fa fa-4x fa-map-marker"></i>
+						</div>
+						<p>
+							Association Faites de la Musique,<br />
+							Ferme Gagnoulet,<br>
+							09500 Malegoude
+						</p>
+					</div>
+					<div class="contact-details">
+						<div class="icon">
+							<i class="fa fa-4x fa-envelope"></i>
+						</div>
+						<p>
+							fdlmteam@gmail.com<br />
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+</main> <!-- end main content area -->
+
+<!-- google maps script -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&callback=initialize"></script>
+<script type="text/javascript" src="js/jquery.ui.map.full.min.js"></script>
+<script type="text/javascript">
+
+	function initialize() {
+	    var map;
+		var latlng = new google.maps.LatLng(43.110995,1.935181);
+		var mapOptions = {
+			'center': latlng,
+			'zoomControl': true,
+			'panControl': true,
+			'streetViewControl': false,	
+			'zoom': 8,
+			'scrollwheel': true,
+			'draggable': true,	
+			'mapTypeControl': true,	
+		};
+
+		map = new google.maps.Map(document.getElementById("contact-map"),
+			mapOptions);
+
+		var marker = new google.maps.Marker({
+			position: latlng,
+			title:"Salle des fêtes de Malegoude"
+		});
+
+		// To add the marker to the map, call setMap();
+		marker.setMap(map);
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+		google.maps.event.addDomListener(window, 'resize', function() {
+			map.setCenter(latlng);
+		});
+	}
+</script>
