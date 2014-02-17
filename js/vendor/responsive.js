@@ -117,10 +117,6 @@ jQuery(document).ready(function() {
 		var linkScroll = function(event, link) {
 			event.preventDefault();
 			event.stopPropagation();
-//			jQuery.smoothScroll({
-//				offset: -scrollOffsetTolerance,
-//				scrollTarget: link.hash
-//			});
 
 			jQuery("html, body").animate({
 				scrollTop: jQuery(link.hash).offset().top-scrollOffsetTolerance+"px"
@@ -264,7 +260,6 @@ jQuery(document).ready(function() {
 
 				}
 
-//				jQuery('.w-nav-item.active').removeClass('active');
 
 				//Move trough each menu and check its position with scroll position then add current class
 				jQuery('.w-nav-item a[href^=#]').each(function() {

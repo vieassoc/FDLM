@@ -1,21 +1,21 @@
 [
 	{
 		"nom":"Accueil",
-		"url":"#/"
+		"url":"#"
 	},
 	{
 		"nom":"Programmation",
-		"url":"#/programmation-malegoude-faites-de-la-musique"
+		"url":"#programmation-malegoude-faites-de-la-musique"
 	},
 	{
 		"nom":"Edition 2013",
-		"url":"#/archive-faites-de-la-musique-fdlm-2013"
+		"url":"#archive-faites-de-la-musique-fdlm-2013"
 	},{
 		"nom":"L'Association",
-		"url":"#/association-faites-de-la-musique"
+		"url":"#association-faites-de-la-musique"
 	},
 	{
 		"nom":"Contact",
-		"url":"#/contact"
+		"url":"#contact"
 	}
 ]

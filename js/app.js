@@ -15,6 +15,11 @@ App.config(['$routeProvider',
 				templateUrl: 'partials/index.html',
 				controller: 'NewsListCtrl'
 			}).
+
+			when('#/', {
+				templateUrl: 'partials/index.html',
+				controller: 'NewsListCtrl'
+			}).
 			when('/programmation-malegoude-faites-de-la-musique', {
 				templateUrl: 'partials/prog.html'
 			}).
