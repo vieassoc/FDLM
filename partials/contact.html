@@ -1,8 +1,9 @@
 <!-- page: CONTACT -->
-<section id="contact" class="l-section">
+<section id="contact">
 	
-	<div class="l-subsection color_dark" style="background-image:url(img/placeholder/parallax.png);">
-		<div class="l-subsection-h">
+
+	<div class="l-subsection"style="background-image:url(img/placeholder/parallax.png);">
+		<div class="l-subsection-h" style="margin-top:50px;">
 			<div class="l-subsection-hh g-html i-cf">
 			
 				<h2><strong>Contactez-nous !</strong></h2>
@@ -35,7 +36,7 @@
 		</div>
 	</div>
 
-	<div class="l-subsection">
+	<div id="parallax_subsection_1" class="l-subsection color_dark with_parallax" style="background-image:url(img/placeholder/parallax.png);">
 		<div class="l-subsection-h">
 			<div class="l-subsection-hh g-html i-cf">
 			
@@ -92,7 +93,7 @@
 </section>
 
 <!-- page: ABOUT -->
-<section id="about" class="l-section">
+<section id="about">
 	
 
 	<div class="l-subsection color_alternate">
@@ -180,7 +181,7 @@
 </section>
 
 <!-- page: SERVICES -->
-<section id="services" class="l-section">
+<section id="services">
 	
 	
 	<div id="parallax_subsection_2" class="l-subsection color_dark with_parallax" style="background-image:url(img/placeholder/parallax.png);">
@@ -217,7 +218,6 @@
 		</div>
 	</div>
 </section>
-	<script type="text/javascript" src="js/vendor/plugins.js"></script>
 
 <!-- GMap-->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
@@ -253,4 +253,8 @@
 			map.setCenter(latlng);
 		});
 	}
+</script>
+
+<script type="text/javascript">
+	window.resizeHandler();
 </script>
