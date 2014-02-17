@@ -48,32 +48,6 @@
 	<script type="text/javascript" src="js/vendor/plugins.js"></script>
 	<script type="text/javascript" src="js/vendor/us.widgets.js"></script>
 
-	<!-- GMap-->
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-	<script type="text/javascript" src="js/vendor/jquery.gmap.min.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function(){
-			jQuery('.w-map-h').gMap({
-				controls: {
-					panControl: false,
-					zoomControl: true,
-					mapTypeControl: true,
-					scaleControl: false,
-					streetViewControl: false,
-					overviewMapControl: false
-				},
-				address: "1600 Amphitheatre Parkway, Mountain View, CA 94043, United States",
-				zoom: 13,
-				markers:[
-					{
-						address: "1600 Amphitheatre Parkway, Mountain View, CA 94043, United States",
-						html: "Our office here",
-						popup: true
-					}
-				]
-			});
-		});
-	</script>
 	
 </head>
 <body class="l-body headertype_sticky headerpos_top hometype_fullscreen ng-cloak" ng-cloak>
