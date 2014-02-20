@@ -33,6 +33,6 @@ App.config(['$routeProvider',
 				templateUrl: 'partials/contact.html'
 			}).
 			otherwise({
-				redirectTo: 'partials/404.html'
+				redirectTo: '/'
 			});
 	}]);

@@ -31,3 +31,12 @@ appServices.factory('GeneralInformation', ['$resource',
 			query: {method:'GET'}
 		});
 	}]);
+
+appServices.factory('Page', [
+	function(){
+		var title = "Index";
+		return {
+			title: function() { return title; },
+			setTitle: function(newTitle) { title = newTitle }
+		};
+	}]);
