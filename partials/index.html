@@ -295,8 +295,20 @@
 	    seconds = parseInt(seconds_left % 60);
 	     
 	    // format countdown string + set tag value
-	    countdown.innerHTML = "<strong>" + days + " jours</strong>, " + hours + " heures, "
-	    + minutes + " minutes, " + seconds + " secondes";  
+	    var text = "";
+	    if(days != 0){
+	    	text += "<strong>" + days + " jours</strong>";
+	    }
+	    if(hours != 0){
+	    	text += ", " + hours + " heures";
+	    }
+	    if(minutes != 0){
+	    	text += ", " + minutes + " minutes";
+	    }
+	    if(seconds != 0){
+	    	text += ", " + seconds + " secondes";
+	    }
+	    countdown.innerHTML = text;
 	 
 	}, 1000);
 </script>
