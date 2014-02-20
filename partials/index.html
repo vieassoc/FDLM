@@ -24,8 +24,8 @@
 			<div class="l-subsection-hh g-html i-cf">
 			
 				<h2>La prochaine édition du<strong> FDLM</strong> sera dans <br>
-				<strong>16 jours</strong> 17 heures 30 secondes</h2>
-				
+				<span id="countdown">
+				</span>
 				<div>
 				<a class="g-btn type_default" href="#programmation-vendredi"><span> Programme du Vendredi 15 Juin</span></a>
 				<a class="g-btn type_default" href="#programmation-samedi"><span>Programme du Samedi 16 Juin</span></a>
@@ -168,7 +168,7 @@
 				
 				<div class="g-hr type_invisible"></div>
 				
-				<a class="g-btn type_default size_small" href="blog.html"><span><i class="fa fa-chevron-right"></i>View all Posts</span></a>
+				<a class="g-btn type_default size_small" href="https://www.facebook.com/pages/Faites-de-la-musique/531040120242024"><span><i class="fa fa-facebook"></i>Visiter notre Facebook</span></a>
 
 			</div>
 		</div>
@@ -263,4 +263,40 @@
 </section>
 <script type="text/javascript">
 	window.resizeHandler();
+
+
+	//Countdown
+	//@origin https://mindgrader.com/tutorials/1-how-to-create-a-simple-javascript-countdown-timer
+
+	// set the date we're counting down to
+	var target_date = new Date("Jun 15, 2014 19:00:00").getTime();
+	 
+	// variables for time units
+	var days, hours, minutes, seconds;
+	 
+	// get tag element
+	var countdown = document.getElementById("countdown");
+	 
+	// update the tag with id "countdown" every 1 second
+	setInterval(function () {
+	 
+	    // find the amount of "seconds" between now and target
+	    var current_date = new Date().getTime();
+	    var seconds_left = (target_date - current_date) / 1000;
+	 
+	    // do some time calculations
+	    days = parseInt(seconds_left / 86400);
+	    seconds_left = seconds_left % 86400;
+	     
+	    hours = parseInt(seconds_left / 3600);
+	    seconds_left = seconds_left % 3600;
+	     
+	    minutes = parseInt(seconds_left / 60);
+	    seconds = parseInt(seconds_left % 60);
+	     
+	    // format countdown string + set tag value
+	    countdown.innerHTML = "<strong>" + days + " jours</strong>, " + hours + " heures, "
+	    + minutes + " minutes, " + seconds + " secondes";  
+	 
+	}, 1000);
 </script>
