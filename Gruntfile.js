@@ -259,6 +259,8 @@ module.exports = function (grunt) {
             'img/{,*/}*.{webp}',
             'fonts/*',
             'partials/*',
+            '!partials/old',
+            '!old',
             'vieassociative/*'
           ]
         }, {

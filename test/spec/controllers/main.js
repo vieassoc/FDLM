@@ -16,4 +16,8 @@ describe('Controller: NewsListCtrl', function () {
     });
   }));
 
+  it('should attach a list of awesomeThings to the scope', function () {
+    expect(scope.news.length).toBe(0);
+  });
+
 });
