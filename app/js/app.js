@@ -5,7 +5,8 @@
 var App = angular.module('fdlmApp', [
 	'ngRoute',
 	'appControllers',
-	'appServices'
+	'appServices',
+	'leaflet-directive',
 ]);
 
 App.config(['$routeProvider',
@@ -30,7 +31,8 @@ App.config(['$routeProvider',
 				templateUrl: 'partials/association.html'
 			}).
 			when('/contact', {
-				templateUrl: 'partials/contact.html'
+				templateUrl: 'partials/contact.html', 
+				controller: 'MapCtrl'
 			}).
 			otherwise({
 				redirectTo: '/'

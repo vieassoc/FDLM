@@ -3,7 +3,9 @@
 /* Controllers */
 
 var appControllers = angular.module('appControllers', [
-  'ngSanitize'
+  'ngSanitize',
+    'leaflet-directive',
+
   ]);
 
 appControllers.controller('NewsListCtrl', ['$scope', 'News', 'Menu', 'Gallery',
@@ -22,6 +24,51 @@ appControllers.controller('TemplateCtrl', ['$scope', 'GeneralInformation',
   function($scope,GeneralInformation) {
     $scope.general_info = GeneralInformation.query();
   }]);
+
+appControllers.controller('MapCtrl', ['$scope',
+  function($scope) {
+    angular.extend($scope, {
+        center: {
+            lat: 43.310995,
+            lng: 1.935181,
+            zoom: 09
+          },
+          markers: {
+            marker: {
+                lat: 43.110995,
+                lng: 1.935181,
+                message: 'Lieu du Festival: Malegoude',
+                focus: true,
+                draggable: false
+              }
+            },
+            defaults: {
+              scrollWheelZoom: false
+            },
+            layers: {
+                baselayers: {
+                    osm: {
+                        name: 'OpenStreetMap   ',
+                        url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                        type: 'xyz'
+                      },
+                      cloudmade2: {
+                        name: 'B/W',
+                        type: 'xyz',
+                        subdomains: '1234',
+                        url: 'http://{s}.maptile.lbs.ovi.com/maptiler/v2/maptile/newest/normal.day.grey/{z}/{x}/{y}/256/png8?token={devID}&app_id={appID}',
+                        layerParams: {
+                          devID: 'xyz',
+                          appID: 'abc',
+                          subdomains: '1234',
+                        }
+                      }
+                    }
+                  }
+                });
+  }]);
+
+
 
 /*
 appControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
