@@ -293,6 +293,13 @@ module.exports = function (grunt) {
       ]
     },
 
+    'gh-pages': {
+        options: {
+          base: 'dist'
+        },
+        src: ['**']
+      },
+
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
     // to use the Usemin blocks.
@@ -320,14 +327,14 @@ module.exports = function (grunt) {
     // },
 
     // Test settings
-    karma: {
-      unit: {
-        configFile: 'karma.conf.js',
-        singleRun: true
+      karma: {
+        unit: {
+          configFile: 'karma.conf.js',
+          singleRun: true
+        }
       }
-    }
-  });
-
+    });
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {

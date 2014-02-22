@@ -56,10 +56,10 @@ appControllers.controller('MapCtrl', ['$scope',
                         name: 'B/W',
                         type: 'xyz',
                         subdomains: '1234',
-                        url: 'http://{s}.maptile.lbs.ovi.com/maptiler/v2/maptile/newest/normal.day.grey/{z}/{x}/{y}/256/png8?token={devID}&app_id={appID}',
+                        url: 'http://{s}.maptile.lbs.ovi.com/maptiler/v2/maptile/newest/normal.day.grey/{z}/{x}/{y}/256/png8?token={devID}&app_id={ID}',
                         layerParams: {
                           devID: 'xyz',
-                          appID: 'abc',
+                          ID: 'abc',
                           subdomains: '1234',
                         }
                       }
