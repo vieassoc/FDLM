@@ -9,44 +9,21 @@
 	<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Dosis:400,700">
 	<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700">
 	
+	
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,app}) css/main.css -->
 	<link rel="stylesheet" type="text/css" media="all" href="css/motioncss.css">
 	<link rel="stylesheet" type="text/css" media="all" href="css/motioncss-widgets.css">
-	
 	<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" media="all" href="css/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" media="all" href="css/jquery.jgrowl.css">
 	<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
 	<link rel="stylesheet" type="text/css" media="all" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" media="all" href="css/colors/color_2.css">
-	
-	<script type="text/javascript" src="js/vendor/modernizr.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery-1.8.3.js"></script>
-
-
-	<script type="text/javascript" src="js/angular-lib/angular.js"></script>
-	<script type="text/javascript" src="js/angular-lib/angular-animate.js"></script>
-	<script type="text/javascript" src="js/angular-lib/angular-resource.js"></script>
-	<script type="text/javascript" src="js/angular-lib/angular-route.js"></script>
-	<script type="text/javascript" src="js/angular-lib/angular-sanitize.js"></script>
-
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript" src="js/controllers.js"></script>
-	<script type="text/javascript" src="js/services.js"></script>
-
-
-
-	<script type="text/javascript" src="js/vendor/mediaelement-and-player.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery.carousello.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery.isotope.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery.magnific-popup.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery.jgrowl.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery.parallax.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery.queryloader2.js"></script>
-	<script type="text/javascript" src="js/vendor/waypoints.min.js"></script>
-	<script type="text/javascript" src="js/vendor/responsive.js"></script>
-	<script type="text/javascript" src="js/vendor/plugins.js"></script>
-
+    <!-- endbuild -->
 	
 </head>
 <body class="l-body headertype_sticky headerpos_top hometype_fullscreen ng-cloak" ng-cloak>
@@ -140,6 +117,40 @@
 	<!-- /FOOTER -->
 
 	<a class="w-toplink" href="#"><i class="fa fa-chevron-up"></i></a>
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/vendor/modernizr.js"></script>
 
+    <!-- build:js js/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+
+	<script type="text/javascript" src="js/vendor/mediaelement-and-player.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.carousello.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.jgrowl.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.parallax.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.queryloader2.js"></script>
+	<script type="text/javascript" src="js/vendor/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/vendor/responsive.js"></script>
+	<script type="text/javascript" src="js/vendor/plugins.js"></script>
+			
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) js/scripts.js -->
+        	<script type="text/javascript" src="js/app.js"></script>
+			<script type="text/javascript" src="js/controllers.js"></script>
+			<script type="text/javascript" src="js/services.js"></script>
+        <!-- endbuild -->
 </body>
 </html>
