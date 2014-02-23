@@ -29,14 +29,14 @@ appControllers.controller('MapCtrl', ['$scope',
   function($scope) {
     angular.extend($scope, {
         center: {
-            lat: 43.310995,
-            lng: 1.935181,
-            zoom: 09
+            lat: +'43.310995',
+            lng: +'1.935181',
+            zoom: +'09'
           },
           markers: {
             marker: {
-                lat: 43.110995,
-                lng: 1.935181,
+                lat: +'43.110995',
+                lng: +'1.935181',
                 message: 'Lieu du Festival: Malegoude',
                 focus: true,
                 draggable: false
