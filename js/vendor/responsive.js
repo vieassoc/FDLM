@@ -117,13 +117,15 @@ jQuery(document).ready(function() {
 		var linkScroll = function(event, link) {
 			event.preventDefault();
 			event.stopPropagation();
-
-			jQuery("html, body").animate({
-				scrollTop: jQuery(link.hash).offset().top-scrollOffsetTolerance+"px"
-			}, {
-				duration: 1200,
-				easing: "easeInOutQuint"
-			});
+			var $link = jQuery(link.hash);
+			if($link.length > 0){
+				jQuery('html, body').animate({
+					scrollTop: $link.offset().top-scrollOffsetTolerance + 'px'
+				}, {
+					duration: 1200,
+					easing: 'easeInOutQuint'
+				});
+			}
 		};
 
 		jQuery('a[class="w-logo-link"][href="#"]').off('click').click(function(event) {
