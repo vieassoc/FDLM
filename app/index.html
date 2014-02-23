@@ -63,7 +63,7 @@
 								<div class="w-nav-list-h" ng-controller="MenuCtrl">
 									<div class="w-nav-item level_1" ng-repeat="item in menu">
 										<div class="w-nav-item-h">
-											<a href="{{item.url}}" class="w-nav-anchor level_1"><span class="w-nav-title">{{item.nom}}</span><span class="w-nav-hint"></span></a>
+											<a href="{{item.url}}" class="w-nav-anchor level_1" ng-class="{ active: isActive(item.url) }"><span class="w-nav-title">{{item.nom}}</span><span class="w-nav-hint"></span></a>
 										</div>
 									</div>
 								</div>

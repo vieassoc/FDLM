@@ -2,3 +2,6 @@
     width: 100%;
     height: 400px;
 }
+.w-nav-anchor.level_1.active{
+    color :#F8862C !important;
+}
