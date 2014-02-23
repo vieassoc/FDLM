@@ -36,9 +36,9 @@
 			</div>
 		</div>
 	</div>
-	
+	<!--
 	<div class="l-subsection color_dark with_parallax full_height" style="background-image:url(img/placeholder/parallax.png);">
-
+	
 		<div class="l-subsection-h">
 			<div class="l-subsection-hh g-html i-cf">
 					<!--
@@ -88,14 +88,14 @@
 						</form>
 					</div>
 				</div>
-				-->
 			</div>
 		</div>
 	</div>
+	-->
 </section>
 
 <!-- page: ABOUT -->
-<!--
+
 <section id="about">
 	
 
@@ -108,64 +108,20 @@
 				<div class="g-hr type_invisible"></div>
 				
 				<div class="g-cols">
-					<div class="one-third">
+					<div ng-repeat="section in staff" class="one-third">
 					
 						<div class="w-iconbox iconpos_top with_circle">
 							<div class="w-iconbox-h">
 								<div class="w-iconbox-link">
 									<div class="w-iconbox-icon">
-										<i class="fa fa-rocket"></i>
+										<i class="fa {{section.cssclassname}}"></i>
 									</div>
-									<h4 class="w-iconbox-title">Développement du site</h4>
+									<h4 class="w-iconbox-title">{{section.title}}</h4>
 								</div>
 								<div class="w-iconbox-text">
-									<p>Nous sommes en charge du développement du design, des pages, du choix des photos...</p>
+									<p>{{section.description}}</p>
 									<ul>
-										<li>Léo MIEULET</li>
-										<li>Andréa BUISSET</li>
-										<li>...</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<div class="one-third">
-					
-						<div class="w-iconbox iconpos_top with_circle">
-							<div class="w-iconbox-h">
-								<div class="w-iconbox-link">
-									<div class="w-iconbox-icon">
-										<i class="fa fa-thumbs-up"></i>
-									</div>
-									<h4 class="w-iconbox-title">Organisation du festival</h4>
-								</div>
-								<div class="w-iconbox-text">
-									<p>C'est grâce à eux que le festival a lieu d'être. Ils prévoient et gèrent à l'avance de toute la préparation du festival.</p>
-									<ul>
-										<li>Gaëtan MIEULET</li>
-										<li>...</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-					<div class="one-third">
-					
-						<div class="w-iconbox iconpos_top with_circle">
-							<div class="w-iconbox-h">
-								<div class="w-iconbox-link">
-									<div class="w-iconbox-icon">
-										<i class="fa fa-heart"></i>
-									</div>
-									<h4 class="w-iconbox-title">Les bénévoles de 2013</h4>
-								</div>
-								<div class="w-iconbox-text">
-									<p>Ils s'occupent de l'organisation et du bon fonctionnement du festival</p>
-									<ul>
-										<li>Gaëtan MIEULET</li>
-										<li>...</li>
+										<li ng-repeat="membre in section.membres">{{membre}}</li>
 									</ul>
 								</div>
 							</div>
@@ -182,7 +138,7 @@
 		</div>
 	</div>
 </section>
--->
+
 
 <!-- page: SERVICES -->
 <!--
