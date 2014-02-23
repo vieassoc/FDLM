@@ -31,8 +31,8 @@ App.config(['$routeProvider',
 				templateUrl: 'partials/association.html'
 			}).
 			when('/contact', {
-				templateUrl: 'partials/contact.html', 
-				controller: 'MapCtrl'
+				templateUrl: 'partials/contact.html',
+				controller: 'ContactCtrl'
 			}).
 			otherwise({
 				redirectTo: '/'

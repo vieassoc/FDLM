@@ -25,6 +25,13 @@ appServices.factory('Gallery', ['$resource',
 		});
 	}]);
 
+appServices.factory('Staff', ['$resource',
+	function($resource){
+		return $resource('vieassociative/staff.json', {}, {
+			query: {method:'GET', isArray:true}
+		});
+	}]);
+
 appServices.factory('GeneralInformation', ['$resource',
 	function($resource){
 		return $resource('vieassociative/association1.json', {}, {
@@ -34,9 +41,9 @@ appServices.factory('GeneralInformation', ['$resource',
 
 appServices.factory('Page', [
 	function(){
-		var title = "Index";
+		var title = 'Index';
 		return {
 			title: function() { return title; },
-			setTitle: function(newTitle) { title = newTitle }
+			setTitle: function(newTitle) { title = newTitle; }
 		};
-	}]);
+    }]);

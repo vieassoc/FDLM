@@ -4,29 +4,31 @@
 
 var appControllers = angular.module('appControllers', [
   'ngSanitize',
-    'leaflet-directive',
-
-  ]);
+  'leaflet-directive',
+]);
 
 appControllers.controller('NewsListCtrl', ['$scope', 'News', 'Menu', 'Gallery',
-  function($scope,News,Menu,Gallery) {
+  function($scope, News, Menu,Gallery) {
     $scope.news = News.query();
     $scope.menu = Menu.query();
     $scope.gallery = Gallery.query({'idGallery':1});
   }]);
 
 appControllers.controller('MenuCtrl', ['$scope', 'Menu',
-  function($scope,Menu) {
+  function($scope, Menu) {
     $scope.menu = Menu.query();
   }]);
 
 appControllers.controller('TemplateCtrl', ['$scope', 'GeneralInformation',
-  function($scope,GeneralInformation) {
+  function($scope, GeneralInformation) {
     $scope.general_info = GeneralInformation.query();
   }]);
 
-appControllers.controller('MapCtrl', ['$scope',
-  function($scope) {
+appControllers.controller('ContactCtrl', ['$scope', 'Staff',
+  function($scope, Staff) {
+    $scope.staff = Staff.query()
+    console.log("sfsdfsd");
+    /** Leaflet Configuration**/
     angular.extend($scope, {
         center: {
             lat: +'43.310995',
@@ -52,7 +54,7 @@ appControllers.controller('MapCtrl', ['$scope',
                         url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                         type: 'xyz'
                       },
-                      cloudmade2: {
+                      maptile: {
                         name: 'B/W',
                         type: 'xyz',
                         subdomains: '1234',
