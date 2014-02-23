@@ -26,8 +26,7 @@ appControllers.controller('TemplateCtrl', ['$scope', 'GeneralInformation',
 
 appControllers.controller('ContactCtrl', ['$scope', 'Staff',
   function($scope, Staff) {
-    $scope.staff = Staff.query()
-    console.log("sfsdfsd");
+    $scope.staff = Staff.query();
     /** Leaflet Configuration**/
     angular.extend($scope, {
         center: {
