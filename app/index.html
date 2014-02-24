@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="en-US" ng-app="fdlmApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Faites de la Musique</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Dosis:400,700">
+	<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700">
+	
+	
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="bower_components/leaflet-dist/leaflet.css" />
+
+    <!-- build:css({.tmp,app}) css/main.css -->
+	<link rel="stylesheet" type="text/css" media="all" href="css/motioncss.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/motioncss-widgets.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/jquery.jgrowl.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/colors/color_2.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/custom.css">
+    <!-- endbuild -->
+	
+</head>
+<body class="l-body headertype_sticky headerpos_top hometype_fullscreen ng-cloak" ng-cloak>
+	<div class='l-preloader'></div>
+	<!-- HEADER -->
+	<div class="l-header">
+		<div class="l-header-h">
+
+			<!-- subheader -->
+			<div class="l-subheader">
+				<div class="l-subheader-h i-cf">
+				
+					<!-- logo -->
+					<div class="w-logo" ng-controller="TemplateCtrl">
+						<div class="w-logo-h">
+							<a class="w-logo-link" href="#">
+								<img class="w-logo-img" ng-src="{{general_info.logo_url}}" alt="CORSA">
+								<span class="w-logo-title">
+									<span class="w-logo-title-h">CORSA</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<!-- nav -->
+					<nav class="w-nav">
+						<div class="w-nav-h">
+							<div class="w-nav-control">
+								<i class="fa fa-bars"></i>
+							</div>
+							<div class="w-nav-list layout_hor width_auto level_1">
+								<div class="w-nav-list-h" ng-controller="MenuCtrl">
+									<div class="w-nav-item level_1" ng-repeat="item in menu">
+										<div class="w-nav-item-h">
+											<a href="{{item.url}}" class="w-nav-anchor level_1" ng-class="{ active: isActive(item.url) }"><span class="w-nav-title">{{item.nom}}</span><span class="w-nav-hint"></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- /HEADER -->
+
+	<!-- MAIN -->
+	<div class="l-main view-container">
+		<div class="l-main-h view-frame" ng-view>
+		
+
+		</div>
+	</div>
+	<!-- /MAIN -->
+
+	<!-- FOOTER -->
+	<div class="l-footer">
+		<div class="l-footer-h">
+
+
+			<!-- subfooter: bottom -->
+			<div class="l-subfooter at_bottom" ng-controller="TemplateCtrl">
+				<div class="l-subfooter-h i-cf">
+
+					<div class="w-copyright">{{general_info.copyrights}}</div>
+
+					<div class="w-socials size_normal">
+						<div class="w-socials-h">
+							<div class="w-socials-list">
+								<div class="w-socials-item facebook" ng-show="general_info.facebook">
+									<a class="w-socials-item-link" target="_blank" href="{{general_info.facebook_url}}">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<div class="w-socials-item-popup">
+										<div class="w-socials-item-popup-h">
+											<span class="w-socials-item-popup-text">Facebook</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- /FOOTER -->
+
+	<a class="w-toplink" href="#"><i class="fa fa-chevron-up"></i></a>
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="js/vendor/modernizr.js"></script>
+    
+    <!-- build:js js/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js js/vendor2.js -->
+	<script type="text/javascript" src="js/vendor/mediaelement-and-player.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.carousello.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.jgrowl.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.parallax.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.queryloader2.js"></script>
+	<script type="text/javascript" src="js/vendor/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/vendor/responsive.js"></script>
+	<script type="text/javascript" src="js/vendor/plugins.js"></script>
+	<!-- endbuild -->
+	
+    <script src="bower_components/leaflet-dist/leaflet.js"></script>
+    <script src="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+    <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+    <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.min.js"></script>
+    
+        <!-- build:js({.tmp,app}) js/scripts.js -->
+        	<script type="text/javascript" src="js/app.js"></script>
+			<script type="text/javascript" src="js/controllers.js"></script>
+			<script type="text/javascript" src="js/services.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

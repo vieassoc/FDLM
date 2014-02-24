@@ -13,3 +13,26 @@
 * /images : les images par défaut du template
 * /img : les images propre à FDLM
 * /lib : les libraries JS
+
+
+## Gruntification
+
+* /app : application
+* /app/bower_components : dépendances
+* GruntFiles.js : fichier de conf de grunt
+
+## Installation
+
+* Need nodejs
+* npm install
+* bower install
+
+## Commandes
+
+* grunt serve : pour l'instant l'instance de dev
+* grunt serve:dist : pour lancer l'instance de prod
+* grunt ghpages : pour build puis pushé dist sur gh-pages
+
+
+
+

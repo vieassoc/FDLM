@@ -1,0 +1,20 @@
+[
+	{
+		"titre": "Développement du site",
+		"description": "Nous sommes en charge du développement du design, des pages, du choix des photos..",
+		"cssclassname": "fa-rocket",
+		"membres": [ "Léo MIEULET", "Andréa BUISSET", "Julien Marinescu" ]
+	},
+	{
+		"titre": "Organisation du festival",
+		"description": "C'est grâce à eux que le festival a lieu d'être. Ils prévoient et gèrent à l'avance de toute la préparation du festival.",
+		"cssclassname": "fa-thumbs-up",
+		"membres": [ "Gaëtan MIEULET" ]
+	},
+	{
+		"titre": "Les bénévoles",
+		"description": "Ils s'occupent de l'organisation et du bon fonctionnement du festival",
+		"cssclassname": "fa-heart",
+		"membres": [ "Gaëtan MIEULET" ]
+	}
+]
