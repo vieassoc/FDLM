@@ -14,9 +14,14 @@ appControllers.controller('NewsListCtrl', ['$scope', 'News', 'Menu', 'Gallery',
     $scope.gallery = Gallery.query({'idGallery':1});
   }]);
 
-appControllers.controller('MenuCtrl', ['$scope', 'Menu',
-  function($scope, Menu) {
+appControllers.controller('MenuCtrl', ['$scope', 'Menu','$route',
+  function($scope, Menu, $route) {
     $scope.menu = Menu.query();
+    $scope.isActive = function(part){
+      var current = window.location.href
+      var current_splited = current.split("/");
+      return ((current_splited[current_splited.length-2] === part) && (current_splited[current_splited.length-1] === "") || (current.indexOf(part.replace("#","")) > 0));
+    };
   }]);
 
 appControllers.controller('TemplateCtrl', ['$scope', 'GeneralInformation',
