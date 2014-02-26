@@ -1,5 +1,5 @@
 <!-- page: CONTACT -->
-<section id="contact" ng-cloack>
+<section ng-cloack>
 	
 
 	<div class="l-subsection"style="background-image:url(img/placeholder/parallax.png);">
@@ -120,7 +120,7 @@
 								</div>
 								<div class="w-iconbox-text">
 									<p>{{section.description}}</p>
-									<ul>
+									<ul style="list-style-type:none;">
 										<li ng-repeat="membre in section.membres">{{membre}}</li>
 									</ul>
 								</div>
@@ -132,7 +132,7 @@
 				
 				<div class="g-hr type_invisible"></div>
 				
-				<a class="g-btn type_default" href="#association"><span><i class="fa fa-arrow-down"></i>En savoir plus sur l'association</span></a>
+				<a class="g-btn type_default" href="#association-faites-de-la-musique"><span><i class="fa fa-arrow-down"></i>En savoir plus sur l'association</span></a>
 				
 			</div>
 		</div>
@@ -216,8 +216,7 @@
 		});
 	}
 </script>
-
-<script type="text/javascript">
-	window.resizeHandler();
-</script>
 -->
+<script type="text/javascript">
+	window.scrollTo(0,0);
+</script>
