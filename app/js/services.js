@@ -6,8 +6,8 @@ var appServices = angular.module('appServices', ['ngResource']);
 
 appServices.factory('News', ['$resource',
 	function($resource){
-		return $resource('vieassociative/news.json', {}, {
-			query: {method:'GET', isArray:true}
+		return $resource('http://www.vieassoc.lo/api/0.1/association/4/news', {}, {//vieassociative/news.json
+			query: {method:'GET', isArray:false}
 		});
 	}]);
 
@@ -38,12 +38,3 @@ appServices.factory('GeneralInformation', ['$resource',
 			query: {method:'GET'}
 		});
 	}]);
-
-appServices.factory('Page', [
-	function(){
-		var title = 'Index';
-		return {
-			title: function() { return title; },
-			setTitle: function(newTitle) { title = newTitle; }
-		};
-    }]);
