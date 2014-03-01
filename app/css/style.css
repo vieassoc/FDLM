@@ -1557,8 +1557,8 @@ input[type="submit"] {
 			display: block;
 			content: '';
 			position: absolute;
-			left: -5px;
-			top: -5px;
+			left: 0px;
+			top: 0px;
 			padding: 5px;
 			height: 100%;
 			width: 100%;
@@ -1566,7 +1566,7 @@ input[type="submit"] {
 			box-shadow: 0 0 0 3px #31c5c7;
 			filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); /* hack for IE8 */
 			opacity: 0;
-			transform: scale(0.8);
+			transform: scale(1.5);
 			-webkit-transition: opacity 0.3s ease;
 					transition: transform 0.3s ease, opacity 0.3s ease;
 			}
