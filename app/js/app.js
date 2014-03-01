@@ -16,13 +16,15 @@ App.config(['$routeProvider',
 				templateUrl: 'partials/index.html',
 				controller: 'NewsListCtrl'
 			}).
-
 			when('#/', {
 				templateUrl: 'partials/index.html',
 				controller: 'NewsListCtrl'
 			}).
-			when('/programmation-malegoude-faites-de-la-musique', {
-				templateUrl: 'partials/prog.html'
+			when('/programmation-ariege-n-zik-vendredi-14-juin-2014', {
+				templateUrl: 'partials/prog-vendredi.html'
+			}).
+			when('/programmation-ariege-n-zik-samedi-15-juin-2014', {
+				templateUrl: 'partials/prog-samedi.html'
 			}).
 			when('/archive-faites-de-la-musique-fdlm-2013', {
 				templateUrl: 'partials/archive.html'
@@ -32,6 +34,10 @@ App.config(['$routeProvider',
 			}).
 			when('/contact', {
 				templateUrl: 'partials/contact.html',
+				controller: 'ContactCtrl'
+			}).
+			when('/artiste/hassah', {
+				templateUrl: 'partials/artiste.html',
 				controller: 'ContactCtrl'
 			}).
 			otherwise({
