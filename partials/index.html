@@ -1,11 +1,11 @@
 <section id="home" class="l-section">
 	
-	<div id="parallax_subsection_0" class="l-subsection color_dark with_parallax" style="background-image:url(http://www.toulouseconcert.com/images/bg4.jpg);">
+	<div id="parallax_subsection_0" class="l-subsection color_dark with_parallax" style="background-image:url(img/fdlm/bg4.jpg);">
 		<div class="l-subsection-h">
 			<div class="l-subsection-hh g-html i-cf">
 
 				<h1 class="home-heading">
-					<span class="home-heading-line bold">Faites de la Musique</span>
+					<span class="home-heading-line bold">Ariège'n Zik</span>
 					<span class="home-heading-line">Le festival de musique en Ariège </span>
 				</h1>
 				
@@ -27,8 +27,8 @@
 				<span id="countdown">
 				</span>
 				<div>
-				<a class="g-btn type_default" href="#programmation-vendredi"><span> Programme du Vendredi 15 Juin</span></a>
-				<a class="g-btn type_default" href="#programmation-samedi"><span>Programme du Samedi 16 Juin</span></a>
+				<a class="g-btn type_default" href="#programmation-ariege-n-zik-vendredi-14-juin-2014"><span> Programme du Vendredi 15 Juin</span></a>
+				<a class="g-btn type_default" href="#programmation-ariege-n-zik-samedi-15-juin-2014"><span>Programme du Samedi 16 Juin</span></a>
 				</div>
 			</div>
 		</div>
@@ -42,120 +42,33 @@
 		<div class="l-subsection-h">
 			<div class="l-subsection-hh g-html i-cf">
 
-				<h2>Our Latest Posts</h2>
+				<h2>Les news</h2>
 				
 				<div class="g-hr type_invisible"></div>
 				
 				<div class="w-blog imgpos_atleft more_hidden">
 					<div class="w-blog-h">
 						<div class="w-blog-list">
-						
-							<div class="w-blog-entry">
+							<div class="w-blog-entry" ng-repeat="new in news">
 								<div class="w-blog-entry-h">
-									<a class="w-blog-entry-link" href="blog-post.html">
-										<div class="w-blog-entry-preview">
-											<img src="img/placeholder/500x500.gif" alt="">
-										</div>
-
-										<h2 class="w-blog-entry-title">
-											<span class="w-blog-entry-title-h">This is a Post</span>
-										</h2>
-									</a>
 									<div class="w-blog-entry-body">
 										<div class="w-blog-entry-meta">
 											<div class="w-blog-entry-meta-date">
-												<span class="w-blog-entry-meta-date-month">Mar</span>
-												<span class="w-blog-entry-meta-date-day">23</span>
-												<span class="w-blog-entry-meta-date-year">2013</span>
+												<span class="w-blog-entry-meta-date-month" ng-bind="new.updated_at | date:'MMM'"></span>
+												<span class="w-blog-entry-meta-date-day" ng-bind="new.updated_at | date:'d'">23</span>
+												<span class="w-blog-entry-meta-date-year" ng-bind="new.updated_at | date:'yyyy'">2013</span>
 											</div>
 										</div>
-
-										<div class="w-blog-entry-short">
-											<p>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus. Working with us you will work with professional certified designers and engineers having the vast good experience.</p>
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-							<div class="w-blog-entry">
-								<div class="w-blog-entry-h">
-									<a class="w-blog-entry-link" href="blog-post.html">
-										<div class="w-blog-entry-preview">
-											<img src="img/placeholder/500x500.gif" alt="">
-										</div>
-
-										<h2 class="w-blog-entry-title">
-											<span class="w-blog-entry-title-h">Another Single Interesting Post</span>
-										</h2>
-									</a>
-									<div class="w-blog-entry-body">
-										<div class="w-blog-entry-meta">
-											<div class="w-blog-entry-meta-date">
-												<span class="w-blog-entry-meta-date-month">Apr</span>
-												<span class="w-blog-entry-meta-date-day">16</span>
-												<span class="w-blog-entry-meta-date-year">2013</span>
+										<div ng-repeat="news_partials in new.data">
+											<h2 class="w-blog-entry-title" ng-if="news_partials.type=='PartialTitle'">
+												<span class="w-blog-entry-title-h" ng-bind="news_partials.title"></span>
+											</h2>
+											<div class="w-blog-entry-short" ng-if="news_partials.type=='PartialText'">
+												<p ng-bind-html="news_partials.text"></p>
 											</div>
-										</div>
-
-										<div class="w-blog-entry-short">
-											<p>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus. Working with us you will work with professional certified designers and engineers having the vast good experience.</p>
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-							<div class="w-blog-entry">
-								<div class="w-blog-entry-h">
-									<a class="w-blog-entry-link" href="blog-post.html">
-										<div class="w-blog-entry-preview">
-											<img src="img/placeholder/500x500.gif" alt="">
-										</div>
-
-										<h2 class="w-blog-entry-title">
-											<span class="w-blog-entry-title-h">This is a Single Clean Post</span>
-										</h2>
-									</a>
-									<div class="w-blog-entry-body">
-										<div class="w-blog-entry-meta">
-											<div class="w-blog-entry-meta-date">
-												<span class="w-blog-entry-meta-date-month">Jul</span>
-												<span class="w-blog-entry-meta-date-day">8</span>
-												<span class="w-blog-entry-meta-date-year">2013</span>
+											<div class="flex-video widescreen" ng-if="news_partials.type=='PartialYoutube'">
+												<iframe ng-src="{{getSrcYoutube(news_partials.youtube_slug)}}" frameborder="0" allowfullscreen=""></iframe>
 											</div>
-										</div>
-
-										<div class="w-blog-entry-short">
-											<p>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus. Working with us you will work with professional certified designers and engineers having the vast good experience.</p>
-										</div>
-
-									</div>
-								</div>
-							</div>
-
-							<div class="w-blog-entry">
-								<div class="w-blog-entry-h">
-									<a class="w-blog-entry-link" href="blog-post.html">
-										<div class="w-blog-entry-preview animate_afc">
-											<img src="img/placeholder/500x500.gif" alt="">
-										</div>
-
-										<h2 class="w-blog-entry-title">
-											<span class="w-blog-entry-title-h">This Post Looks Beautiful even with Long Interesting Title</span>
-										</h2>
-									</a>
-									<div class="w-blog-entry-body">
-										<div class="w-blog-entry-meta">
-											<div class="w-blog-entry-meta-date">
-												<span class="w-blog-entry-meta-date-month">Aug</span>
-												<span class="w-blog-entry-meta-date-day">23</span>
-												<span class="w-blog-entry-meta-date-year">2013</span>
-											</div>
-										</div>
-
-										<div class="w-blog-entry-short">
-											<p>Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus. Working with us you will work with professional certified designers and engineers having the vast good experience.</p>
 										</div>
 
 									</div>
@@ -168,7 +81,7 @@
 				
 				<div class="g-hr type_invisible"></div>
 				
-				<a class="g-btn type_default size_small" href="https://www.facebook.com/pages/Faites-de-la-musique/531040120242024"><span><i class="fa fa-facebook"></i>Visiter notre Facebook</span></a>
+				<a class="g-btn type_default size_small" target="_blank" style="background-color:#3B5998;" href="https://www.facebook.com/ariege.n.zic"><span><i class="fa fa-facebook"></i>Nous rejoindre sur Facebook</span></a>
 
 			</div>
 		</div>
@@ -312,3 +225,19 @@
 	 
 	}, 1000);
 </script>
+<style type="text/css">
+	.w-blog.imgpos_atleft .w-blog-entry-body{
+		margin-left: 10%;
+	}
+	.w-blog.imgpos_atleft .w-blog-entry-title{
+		margin-left: -4%;
+	}
+	.w-blog-entry-title{
+		color: #f8862c;
+	}
+	.flex-video{position:relative;padding-top:25px;padding-bottom:67.5%;height:0;margin-bottom:16px;margin:10px 0 16px 0;overflow:hidden}.flex-video.widescreen{padding-bottom:57.25%}
+	.flex-video.vimeo{padding-top:0}
+	.flex-video iframe,.flex-video object,.flex-video embed{position:absolute;top:0;left:0;width:100%;height:100%}
+	@media only screen and (max-device-width:800px),only screen and (device-width:1024px) and (device-height:600px),only screen and (width:1280px) and (orientation:landscape),only screen and (device-width:800px),only screen and (max-width:767px){.flex-video{padding-top:0}}.datepicker{padding:4px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;direction:ltr;}
+
+</style>

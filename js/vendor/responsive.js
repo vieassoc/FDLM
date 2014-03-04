@@ -150,9 +150,6 @@ jQuery(document).ready(function() {
 			});
 		});
 
-		jQuery('a[href^="#"][href!="#"]').off('click').die('click').live('click',function(event) {
-			linkScroll(event, this);
-		});
 
 		jQuery('.l-header .w-nav').each(function () {
 			var nav = jQuery(this),
