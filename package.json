@@ -48,5 +48,9 @@
   },
   "scripts": {
     "test": "grunt test"
+  },
+  "repository" :
+  { "type" : "git"
+     , "url" : "http://github.com/npm/npm.git"
   }
 }

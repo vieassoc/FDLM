@@ -12,6 +12,9 @@ appControllers.controller('NewsListCtrl', ['$scope', 'News', 'Menu', 'Gallery',
     $scope.news = News.query();
     $scope.menu = Menu.query();
     $scope.gallery = Gallery.query({'idGallery':1});
+    $scope.getSrcYoutube = function(url){
+        return 'https://www.youtube-nocookie.com/embed/'+url;
+    }
   }]);
 
 appControllers.controller('MenuCtrl', ['$scope', 'Menu','$route',

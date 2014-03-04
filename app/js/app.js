@@ -16,10 +16,6 @@ App.config(['$routeProvider',
 				templateUrl: 'partials/index.html',
 				controller: 'NewsListCtrl'
 			}).
-			when('#/', {
-				templateUrl: 'partials/index.html',
-				controller: 'NewsListCtrl'
-			}).
 			when('/programmation-ariege-n-zik-vendredi-14-juin-2014', {
 				templateUrl: 'partials/prog-vendredi.html'
 			}).
@@ -45,3 +41,14 @@ App.config(['$routeProvider',
 			});
 	}]);
 
+App.config(function($sceDelegateProvider) {
+     $sceDelegateProvider.resourceUrlWhitelist([
+       // Allow same origin resource loads.
+       'self',
+       // Allow loading from our assets domain.  Notice the difference between * and **.
+       "http://www.youtube.com/embed/**",
+       "https://www.youtube-nocookie.com/**"
+       ]);
+
+     }
+);

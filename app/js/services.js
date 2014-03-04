@@ -6,7 +6,7 @@ var appServices = angular.module('appServices', ['ngResource']);
 
 appServices.factory('News', ['$resource',
 	function($resource){
-		return $resource('http://www.vieassociative.fr/api/0.1/association/1/news', {}, {//vieassociative/news.json
+		return $resource('http://www.vieassociative.fr/api/0.1/association/5/news', {}, {//vieassociative/news.json
 			query: {method:'GET', isArray:false}
 		});
 	}]);
