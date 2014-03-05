@@ -5,3 +5,16 @@
 .w-nav-anchor.level_1.active{
     color :#F8862C !important;
 }
+
+.g-btn.type_primary.green{
+    background-color: #6EBB25;
+}
+
+a:hover,
+a:active {
+	text-decoration: none;
+}
+.no-touch .g-btn:after {
+-webkit-transition: none;
+		transition: none;
+}

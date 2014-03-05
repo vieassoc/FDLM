@@ -7,6 +7,7 @@ var App = angular.module('fdlmApp', [
 	'appControllers',
 	'appServices',
 	'leaflet-directive',
+	'angularSmoothscroll',
 ]);
 
 App.config(['$routeProvider',
@@ -16,17 +17,18 @@ App.config(['$routeProvider',
 				templateUrl: 'partials/index.html',
 				controller: 'NewsListCtrl'
 			}).
-			when('/programmation-ariege-n-zik-vendredi-14-juin-2014', {
+			when('/programmation-ariege-n-zik-vendredi-13-juin-2014', {
 				templateUrl: 'partials/prog-vendredi.html'
 			}).
-			when('/programmation-ariege-n-zik-samedi-15-juin-2014', {
+			when('/programmation-ariege-n-zik-samedi-14-juin-2014', {
 				templateUrl: 'partials/prog-samedi.html'
 			}).
 			when('/archive-faites-de-la-musique-fdlm-2013', {
 				templateUrl: 'partials/archive.html'
 			}).
 			when('/association-faites-de-la-musique', {
-				templateUrl: 'partials/association.html'
+				templateUrl: 'partials/association.html',
+				controller: 'AssociationCtrl'
 			}).
 			when('/contact', {
 				templateUrl: 'partials/contact.html',
@@ -52,3 +54,18 @@ App.config(function($sceDelegateProvider) {
 
      }
 );
+/*
+App.directive('scrollTo', function ($location, $anchorScroll) {
+    return function(scope, element, attrs) {
+    element.bind('click', function(event) {
+			event.stopPropagation();
+			scope.$on('$locationChangeStart', function(ev) {
+			  ev.preventDefault();
+			});
+			var location = attrs.scrollTo;
+			$location.hash(location);
+			$anchorScroll();
+		});
+	};
+  });
+*/

@@ -32,9 +32,12 @@ appControllers.controller('TemplateCtrl', ['$scope', 'GeneralInformation',
     $scope.general_info = GeneralInformation.query();
   }]);
 
-appControllers.controller('ContactCtrl', ['$scope', 'Staff',
+appControllers.controller('AssociationCtrl', ['$scope', 'Staff',
   function($scope, Staff) {
     $scope.staff = Staff.query();
+  }]);
+appControllers.controller('ContactCtrl', ['$scope',
+  function($scope) {
     /** Leaflet Configuration**/
     angular.extend($scope, {
         center: {

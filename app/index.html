@@ -62,8 +62,25 @@
 							<div class="w-nav-list layout_hor width_auto level_1">
 								<div class="w-nav-list-h" ng-controller="MenuCtrl">
 									<div class="w-nav-item level_1" ng-repeat="item in menu">
-										<div class="w-nav-item-h">
+										<div class="w-nav-item-h" ng-if="item.level_1==false">
 											<a href="{{item.url}}" class="w-nav-anchor level_1" ng-class="{ active: isActive(item.url) }"><span class="w-nav-title">{{item.nom}}</span><span class="w-nav-hint"></span></a>
+										</div>
+										<div class="w-nav-item level_1 with_sublevel active" ng-if="item.level_1==true">
+											<div class="w-nav-item-h">
+												<a href="{{item.url}}" class="w-nav-anchor level_1" ng-class="{ active: isActive(item.url) }"><span class="w-nav-title">{{item.nom}}</span><span class="w-nav-hint"></span></a>
+												
+												<!-- level 2 -->
+												<div class="w-nav-list place_down show_onhover level_2">
+													<div class="w-nav-list-h">
+														<div class="w-nav-item level_2 active">
+															<div class="w-nav-item-h" ng-repeat="submenu in item.submenu">
+																<a href="{{submenu.url}}" class="w-nav-anchor level_2" ng-class="{ active: isActive(submenu.url) }"><span class="w-nav-title">{{submenu.nom}}</span><span class="w-nav-hint"></span></a>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+											</div>
 										</div>
 									</div>
 								</div>
@@ -131,7 +148,7 @@
     
     <!-- build:js js/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -140,6 +157,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angular-smoothscroll/dist/scripts/c8742280.scripts.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
