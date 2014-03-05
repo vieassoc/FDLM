@@ -10,11 +10,11 @@
     "angular-cookies": "1.2.6",
     "angular-sanitize": "1.2.6",
     "angular-route": "1.2.6",
-    "angular-leaflet-directive": "*"
+    "angular-leaflet-directive": "*",
+    "angular-smoothscroll": "*"
   },
   "devDependencies": {
     "angular-mocks": "1.2.6",
-    "angular-scenario": "1.2.6",
-    "angular-smoothscroll": "*"
+    "angular-scenario": "1.2.6"
   }
 }
