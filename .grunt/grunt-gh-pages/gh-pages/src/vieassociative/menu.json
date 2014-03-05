@@ -1,0 +1,34 @@
+[
+	{
+		"nom":"Accueil",
+		"url":"#",
+		"level_1":false
+	},
+	{
+		"nom":"Programmation 2014",
+		"url":"#programmation-ariege-n-zik-vendredi-13-juin-2014",
+		"level_1":true,
+		"submenu":[
+			{
+				"nom":"Vendredi 13 JUIN",
+				"url":"#programmation-ariege-n-zik-vendredi-13-juin-2014"
+			},{
+				"nom":"Samedi 14 JUIN",
+				"url":"#programmation-ariege-n-zik-samedi-14-juin-2014"
+			}
+		]
+	},{
+		"nom":"Edition 2013",
+		"url":"#archive-faites-de-la-musique-fdlm-2013",
+		"level_1":false
+	},{
+		"nom":"L'Association",
+		"url":"#association-faites-de-la-musique",
+		"level_1":false
+	},
+	{
+		"nom":"Contact",
+		"url":"#contact",
+		"level_1":false
+	}
+]
