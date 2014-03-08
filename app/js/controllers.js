@@ -7,16 +7,6 @@ var appControllers = angular.module('appControllers', [
   'leaflet-directive',
 ]);
 
-appControllers.controller('NewsListCtrl', ['$scope', 'News', 'Menu', 'Gallery',
-  function($scope, News, Menu,Gallery) {
-    $scope.news = News.query();
-    $scope.menu = Menu.query();
-    $scope.gallery = Gallery.query({'idGallery':1});
-    $scope.getSrcYoutube = function(url){
-        return 'https://www.youtube-nocookie.com/embed/'+url;
-    }
-  }]);
-
 appControllers.controller('MenuCtrl', ['$scope', 'Menu','$route',
   function($scope, Menu, $route) {
     $scope.menu = Menu.query();
@@ -32,10 +22,21 @@ appControllers.controller('TemplateCtrl', ['$scope', 'GeneralInformation',
     $scope.general_info = GeneralInformation.query();
   }]);
 
+appControllers.controller('NewsListCtrl', ['$scope', 'News', 'Menu', 'Gallery',
+  function($scope, News, Menu,Gallery) {
+    $scope.news = News.query();
+    $scope.menu = Menu.query();
+    $scope.gallery = Gallery.query({'idGallery':1});
+    $scope.getSrcYoutube = function(url){
+        return 'https://www.youtube-nocookie.com/embed/'+url;
+    }
+  }]);
+
 appControllers.controller('AssociationCtrl', ['$scope', 'Staff',
   function($scope, Staff) {
     $scope.staff = Staff.query();
   }]);
+
 appControllers.controller('ContactCtrl', ['$scope',
   function($scope) {
     /** Leaflet Configuration**/

@@ -23,10 +23,22 @@ a:active {
     display: inline-block;
     vertical-align: middle;
     max-height: none;
-    height: 110px;
-    margin-top:1px;
+	height: 70px;
+	z-index: 100;
+    margin-top:0px;
     position: absolute;
-    -ms-transform: rotate(-5deg); /* IE 9 */
-    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
-    transform: rotate(-5deg);
+}
+
+@media (min-width: 1040px) {
+	.w-logo-img {
+	    display: inline-block;
+	    vertical-align: middle;
+	    max-height: none;
+	    height: 141px;
+	    margin-top:1px;
+	    position: absolute;
+	    -ms-transform: rotate(-5deg); /* IE 9 */
+	    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+	    transform: rotate(-5deg);
+	}
 }
