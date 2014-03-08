@@ -2,16 +2,56 @@
 
 <!-- page: CONTACT -->
 <section id="contact" class="l-section">
-	
+		
 
 	<div class="l-subsection">
+		<div class="l-subsection-h">
+			<div class="l-subsection-hh g-html i-cf">
+
+				<h3 class="highlight"><strong>Qui sommes nous?</strong></h3>
+				
+				<div class="g-hr type_invisible"></div>
+				
+				<div class="g-cols">
+					<div ng-repeat="section in staff" class="one-third">
+					
+						<div class="w-iconbox iconpos_top with_circle">
+							<div class="w-iconbox-h">
+								<div class="w-iconbox-link">
+									<div class="w-iconbox-icon">
+										<i class="fa {{section.cssclassname}}"></i>
+									</div>
+									<h4 class="w-iconbox-title">{{section.title}}</h4>
+								</div>
+								<div class="w-iconbox-text">
+									<p>{{section.description}}</p>
+									<ul style="list-style-type:none;">
+										<li ng-repeat="membre in section.membres">{{membre}}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="g-hr type_invisible"></div>
+				
+				<a class="g-btn type_primary green" smooth-scroll-jquery target="adherent" speed="1000"><span><i class="fa fa-arrow-down"></i>Devenir membre</span></a>
+				<a class="g-btn type_primary green" smooth-scroll-jquery target="benevole" speed="1000"><span><i class="fa fa-arrow-down"></i>Devenir bénévoles</span></a>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="l-subsection color_alternate" id="adherent">
 		<div class="l-subsection-h">
 			<div class="l-subsection-hh g-html i-cf">
 
 				
 				<h4 class="highlight"><strong>DEVENEZ ADHÉRENT DE L'ASSOCIATION EN 1 MIN !</strong></h4>
 				
-				<p class="size_big">Nous ne partageons aucune de vos autres données personnelles avec un tiers sans votre accord explicite.</p>
+				<p class="size_big">Nous ne partageons aucune de vos données personnelles avec un tiers sans votre accord explicite</p>
 
 				<div class="w-form contacts_form">
 					<div class="w-form-h contacts_form_form">
@@ -59,7 +99,7 @@
 							<div class="g-form-row">
 								<div class="g-form-row-label"></div>
 								<div class="g-form-row-field">
-									<button class="g-btn type_primary" id="message_send"><span><i class="fa fa-envelope-o"></i>Send Message</span></button>
+									<button class="g-btn type_primary" id="message_send"><span><i class="fa fa-envelope-o"></i>S'inscrire</span></button>
 								</div>
 							</div>
 						</form>
@@ -72,18 +112,18 @@
 		</div>
 	</div>
 		
-	<div class="l-subsection" style="background-image:url(img/placeholder/parallax.png);">
+	<div class="l-subsection" style="background-image:url(img/placeholder/parallax.png);" id="benevole">
 		<div class="l-subsection-h" style="margin-top:50px;">
 			<div class="l-subsection-hh g-html i-cf">
 			
-				<h2 class="highlight"><strong>Devenir bénévole !</strong></h2>
+				<h2 class="highlight"><strong>Devenez bénévole !</strong></h2>
 				
 				<div class="w-contacts">
 					<div class="w-contacts-h">
 						<div class="w-contacts-list">
 							<div class="w-contacts-item">
 								<i class="fa fa-envelope-o"></i>
-								<span class="w-contacts-item-value"><a href="mailto:FDLM@gmail.com?subject=Je souhaite devenir bénèvole" target="_blank">Postuler</a></span>
+								<span class="w-contacts-item-value"><a href="mailto:FDLMteam@gmail.com?subject=Je souhaite devenir bénèvole" target="_blank">Postuler à l'adresse FDLMteam@gmail.com !</a></span>
 							</div>
 						</div>
 					</div>
