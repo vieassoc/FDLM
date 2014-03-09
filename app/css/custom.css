@@ -22,11 +22,13 @@ a:active {
 .w-logo-img {
     display: inline-block;
     vertical-align: middle;
-    max-height: none;
-	height: 70px;
+    max-height: 90px;
+	height: 90px;
 	z-index: 100;
-    margin-top:0px;
+    margin-top:-25px;
     position: absolute;
+    padding:0;
+
 }
 
 @media (min-width: 1040px) {
@@ -34,11 +36,21 @@ a:active {
 	    display: inline-block;
 	    vertical-align: middle;
 	    max-height: none;
-	    height: 141px;
-	    margin-top:1px;
+	    height: 130px;
+	    margin-top:-2px;
 	    position: absolute;
 	    -ms-transform: rotate(-5deg); /* IE 9 */
 	    -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
 	    transform: rotate(-5deg);
 	}
+}
+
+.leaflet-popup-content{
+	text-align:center;
+	padding-top:8px;
+	color:black;
+}
+
+.w-map{
+	margin-bottom:50px;
 }
