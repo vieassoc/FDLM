@@ -29,7 +29,7 @@ App.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
 			when('/', {
-				templateUrl: 'partials/index.html',
+				templateUrl: 'partials/home.html',
 				controller: 'NewsListCtrl'
 			}).
 			when('/programmation-ariege-n-zik-vendredi-13-juin-2014', {
