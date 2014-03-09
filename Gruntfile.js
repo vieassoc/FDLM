@@ -260,7 +260,7 @@ module.exports = function (grunt) {
             'bower_components/**/*',
             'partials/{,*/}*.html',
             'js/vendor/**/*',
-            'img/{,*/}*.{webp}',
+            'img/{,*/}*.{webp,ico}',
             'fonts/*',
             '!partials/old',
             '!old',
