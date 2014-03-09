@@ -50,7 +50,9 @@ appControllers.controller('ContactCtrl', ['$scope',
             marker: {
                 lat: +'43.110995',
                 lng: +'1.935181',
-                message: 'Lieu du Festival: Malegoude',
+                message: '<strong>Festival Arieg\'n ZIC</strong><br/>' +
+                         '09500 Malegoude<br/><br/>' +
+                         'itinéraire : <a target="blank" href="https://maps.google.fr/maps?daddr=malegoude&hl=fr&ll=43.206177,2.109375&spn=0.912897,2.113495&sll=42.943856,1.50092&sspn=1.833603,4.22699&mra=ls&t=m&z=10">google map</a>',
                 focus: true,
                 draggable: false
               }
@@ -60,11 +62,6 @@ appControllers.controller('ContactCtrl', ['$scope',
             },
             layers: {
                 baselayers: {
-                    osm: {
-                        name: 'OpenStreetMap   ',
-                        url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-                        type: 'xyz'
-                      },
                       maptile: {
                         name: 'B/W',
                         type: 'xyz',
@@ -75,7 +72,13 @@ appControllers.controller('ContactCtrl', ['$scope',
                           ID: 'abc',
                           subdomains: '1234',
                         }
+                      },
+                    osm: {
+                        name: 'OpenStreetMap   ',
+                        url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                        type: 'xyz'
                       }
+
                     }
                   }
                 });
