@@ -42,7 +42,7 @@ appControllers.controller('ContactCtrl', ['$scope',
 	/** Leaflet Configuration**/
 	angular.extend($scope, {
 		center: {
-			lat: +'43.310995',
+			lat: +'43.210995',
 			lng: +'1.935181',
 			zoom: +'09'
 		},
