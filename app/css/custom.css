@@ -54,3 +54,9 @@ a:active {
 .w-map{
 	margin-bottom:50px;
 }
+
+.leaflet-control-layers-base label {
+    clear: both;
+    display: block;
+    text-align: left;
+}
