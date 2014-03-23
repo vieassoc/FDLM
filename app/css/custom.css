@@ -39,9 +39,9 @@ a:active {
 	    height: 130px;
 	    margin-top:-2px;
 	    position: absolute;
-	    -ms-transform: rotate(-8deg); /* IE 9 */
-	    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
-	    transform: rotate(-8deg);
+	    /**-ms-transform: rotate(-8deg); /* IE 9 */
+	    /**-webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+	    /**transform: rotate(-8deg);**/
 	}
 }
 
@@ -59,4 +59,18 @@ a:active {
     clear: both;
     display: block;
     text-align: left;
+}
+
+.glyphicon.glyphicon-music.icon-white{
+    font-size:15px;
+}
+
+.l-subheader .w-nav-item.level_2:hover .w-nav-anchor.level_2{
+color: white;
+}
+.l-subheader .w-nav-item.level_2:hover .w-nav-anchor.level_2:hover{
+    color: #f5b800;
+}
+.l-subheader .w-nav-anchor.level_2.active{
+    color: #f8862c !important
 }
