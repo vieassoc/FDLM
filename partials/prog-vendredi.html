@@ -8,7 +8,7 @@
 			
 				<h4><strong>Deux jours de folies</strong></h4>
 				
-				<a class="g-btn type_primary green" smooth-scroll-jquery target="vendredi" speed="1000"><span><i class="fa fa-arrow-down"></i> Vendredi 13 Juin</span></a>
+				<a class="g-btn type_primary green" smooth-scroll-jquery target="vendredi" speed="500"><span><i class="fa fa-arrow-down"></i> Vendredi 13 Juin</span></a>
 				<a class="g-btn type_primary" href="#programmation-ariege-n-zik-samedi-14-juin-2014"><span>Samedi 14 Juin <i class="fa fa-share"></i></span></a>
 				
 			</div>
@@ -17,19 +17,43 @@
 </section>
 
 <!-- page: OUR TEAM -->
-<section id="vendredi" class="l-section">
+<section class="l-section">
 	
 	<div class="l-subsection">
 		<div class="l-subsection-h">
-			<div class="l-subsection-hh g-html i-cf">
-			
-				<p class="subtitle">Who we are?</p>
-				<h2 class="highlight"><strong>We are CORSA</strong></h2>
-				
+			<div id="vendredi" class="l-subsection-hh g-html i-cf">
+				<p class="subtitle">Programmation</p>
+				<h2 class="highlight"><strong>Vendredi 13 juin 2014</strong></h2>
+				<!--
 				<p class="size_big">This is our dedicated team who work day-in and day-out together to bring our clients<br>the most amazing projects for a digitally connected world.</p>
-				
+				-->
 				<div class="g-hr type_invisible"></div>
-				
+
+				<!-- Vertical TimeLine -->
+				<ul class="cbp_tmtimeline">
+					<li ng-repeat="programmation in programmations">
+						<time class="cbp_tmtime" datetime="{{programmation.date_start}}">
+							<span >4/10/13</span> 
+							<span class="begin" ng-bind="programmation.date_start | date:'HH:mm'"></span> 
+							<span class="end">21:00</span></time>
+						<div class="cbp_tmicon"></div>
+						<div class="cbp_tmlabel">
+							<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<img src="img/placeholder/500x500.gif" style="width:100%;" alt="member photo">
+							</div>
+							<div class="col-sm-8 col-xs-12">
+								<h2>
+									<a href="#artiste/camping-sauvage" target="_blank">
+										<i class="fa fa-chevron-right"></i>{{programmation.artiste.nom}}
+									</a>
+								</h2>
+								<p>{{programmation.artiste.description}}</p>
+							</div>
+						</div>
+						</div>
+					</li>
+				</ul>				
 				<div class="w-team">
 					<div class="w-team-h">
 						<div class="w-team-list">

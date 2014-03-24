@@ -1,0 +1,35 @@
+[
+	{
+		"date_start":"2014-08-13T19:00:58",
+		"date_end":"2014-08-13T21:00:00",
+		"artiste": {
+				"nom":"Camping sauvage",
+				"url":"#artiste/camping-sauvage",
+				"id":"",
+				"description":"Jazz Manouche",
+				"genre":""
+		}
+	},
+	{
+		"date_start":"2014-08-13T19:00:58",
+		"date_end":"2014-08-13T21:00:00",
+		"artiste": {
+				"nom":"Camping sauvage",
+				"url":"#artiste/camping-sauvage",
+				"id":"",
+				"description":"Jazz Manouche",
+				"genre":""
+		}
+	},
+	{
+		"date_start":"2014-08-13T19:00:58",
+		"date_end":"2014-08-13T21:00:00",
+		"artiste": {
+				"nom":"Camping sauvage",
+				"url":"#artiste/camping-sauvage",
+				"id":"",
+				"description":"Jazz Manouche",
+				"genre":""
+		}
+	}
+] 
