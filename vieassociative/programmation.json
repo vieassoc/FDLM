@@ -54,4 +54,15 @@
 				"genre":""
 		}
 	}
+	{
+		"date_start":"2014-06-14T20:30:00",
+		"date_end":"2014-06-14T22:30:00",
+		"artiste": {
+				"nom":"Example",
+				"url":"#artiste/camping-sauvage",
+				"id":"",
+				"description":"fsdfs sfsdf sfdsdf",
+				"genre":""
+		}
+	}
 ] 
