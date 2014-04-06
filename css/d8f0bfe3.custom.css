@@ -164,3 +164,7 @@ a:active {
     font-size: 1em;
     color: #A9A9A9 !important;
 }
+
+.fa.fa-chevron-right{
+    margin-right:10px;
+}

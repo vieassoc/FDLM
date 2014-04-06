@@ -1,7 +1,7 @@
 [
 	{
-		"date_start":"2014-08-13T19:00:58",
-		"date_end":"2014-08-13T21:00:00",
+		"date_start":"2014-06-13T19:00:58",
+		"date_end":"2014-06-13T21:00:00",
 		"artiste": {
 				"nom":"Camping sauvage",
 				"url":"#artiste/camping-sauvage",
@@ -11,24 +11,46 @@
 		}
 	},
 	{
-		"date_start":"2014-08-13T19:00:58",
-		"date_end":"2014-08-13T21:00:00",
+		"date_start":"2014-06-13T21:00:00",
+		"date_end":"2014-06-13T23:00:00",
 		"artiste": {
-				"nom":"Camping sauvage",
+				"nom":"Critical Quartet Experience",
 				"url":"#artiste/camping-sauvage",
 				"id":"",
-				"description":"Jazz Manouche",
+				"description":"Groupement des WEC et des Black do",
 				"genre":""
 		}
 	},
 	{
-		"date_start":"2014-08-13T19:00:58",
-		"date_end":"2014-08-13T21:00:00",
+		"date_start":"2014-06-13T23:00:58",
+		"date_end":"2014-06-14T01:00:00",
 		"artiste": {
-				"nom":"Camping sauvage",
+				"nom":"La petite fumée",
 				"url":"#artiste/camping-sauvage",
 				"id":"",
-				"description":"Jazz Manouche",
+				"description":"",
+				"genre":""
+		}
+	},
+	{
+		"date_start":"2014-06-14T01:00:00",
+		"date_end":"2014-06-14T03:00:00",
+		"artiste": {
+				"nom":"Tremix",
+				"url":"#artiste/camping-sauvage",
+				"id":"",
+				"description":"Ska Rock Balkan Reggae Swing",
+				"genre":""
+		}
+	},
+	{
+		"date_start":"2014-06-14T03:30:58",
+		"date_end":"2014-06-14T06:00:00",
+		"artiste": {
+				"nom":"DJ de la fête Mille",
+				"url":"#artiste/camping-sauvage",
+				"id":"",
+				"description":"Dub - Dub Step - D&Bass",
 				"genre":""
 		}
 	}

@@ -1,0 +1,26 @@
+<!-- Vertical TimeLine -->
+<ul class="cbp_tmtimeline">
+
+	<li ng-repeat="programmation in programmations | isConcerned:current_date">
+		<time class="cbp_tmtime" datetime="{{programmation.date_start}}">
+			<span >4/10/13</span> 
+			<span class="begin" ng-bind="programmation.date_start | date:'HH:mm'"></span> 
+			<span class="end" ng-bind="programmation.date_end | date:'HH:mm'"></span></time>
+		<div class="cbp_tmicon"></div>
+		<div class="cbp_tmlabel">
+			<div class="row">
+			<div class="col-sm-4 col-xs-12">
+				<img src="img/placeholder/500x500.gif" style="width:100%;" alt="member photo">
+			</div>
+			<div class="col-sm-8 col-xs-12">
+				<h2>
+					<a href="#artiste/camping-sauvage" target="_blank">
+						<i class="fa fa-chevron-right"></i>{{programmation.artiste.nom}}
+					</a>
+				</h2>
+				<p>{{programmation.artiste.description}}</p>
+			</div>
+		</div>
+		</div>
+	</li>
+</ul>
