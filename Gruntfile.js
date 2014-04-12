@@ -264,6 +264,7 @@ module.exports = function (grunt) {
             'fonts/*',
             '!partials/old',
             '!old',
+            'css/**/**/*',
             'vieassociative/*'
           ]
         }, {
@@ -271,6 +272,10 @@ module.exports = function (grunt) {
           cwd: '.tmp/img',
           dest: '<%= yeoman.dist %>/img',
           src: ['generated/*']
+        }, {
+          expand: true,
+          dest: '<%= yeoman.dist %>',
+          src: 'CNAME'
         }]
       },
       styles: {
