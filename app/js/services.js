@@ -32,6 +32,13 @@ appServices.factory('Staff', ['$resource',
 		});
 	}]);
 
+appServices.factory('Programmation', ['$resource',
+	function($resource){
+		return $resource('vieassociative/programmation.json', {}, {
+			query: {method:'GET', isArray:true}
+		});
+	}]);
+
 appServices.factory('GeneralInformation', ['$resource',
 	function($resource){
 		return $resource('vieassociative/association1.json', {}, {

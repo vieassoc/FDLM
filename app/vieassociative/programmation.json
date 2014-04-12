@@ -1,0 +1,158 @@
+[
+	{
+		"date_start":"2014-06-13T20:30:00",
+		"date_end":"2014-06-13T21:45:00",
+		"artiste": {
+				"nom":"CRITICAL QUARTET EXPERIENCE",
+				"url":"#artiste/critical-quartet-experience",
+				"id":"",
+				"description":"Groupement des WEC et des Black do",
+				"genre":"funk jazz rock",
+				"picture":"critical-quartet.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-13T22:15:00",
+		"date_end":"2014-06-13T23:30:00",
+		"artiste": {
+				"nom":"La petite fumée",
+				"url":"#artiste/camping-sauvage",
+				"id":"",
+				"description":"",
+				"genre":"Trance percu",
+				"picture":"petite-fumee.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-14T00:00:00",
+		"date_end":"2014-06-14T01:30:00",
+		"artiste": {
+				"nom":"Tremix",
+				"url":"#artiste/tremix",
+				"id":"",
+				"description":"Ska Rock Electro Balkan",
+				"genre":"Ska Rock Electro Balkan",
+				"picture":"tremix1.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-14T01:30:00",
+		"date_end":"2014-06-14T03:00:00",
+		"artiste": {
+				"nom":"Dr Fuzz",
+				"url":"#artiste/dr-fuzz",
+				"id":"",
+				"description":"Navalistyc Dubstep",
+				"genre":"Navalistyc Dubstep",
+				"picture":"dr-Fuzz.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-14T03:00:00",
+		"date_end":"2014-06-14T04:30:00",
+		"artiste": {
+				"nom":"Tofigniol (Rat 100 blé)",
+				"url":"#artiste/tofigniol",
+				"id":"",
+				"description":"Dub Dubstep D&B",
+				"genre":"Dub Dubstep D&B",
+				"picture":"tofigniol.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-14T04:30:00",
+		"date_end":"2014-06-14T06:00:00",
+		"artiste": {
+				"nom":"Splinter (Trucktown MAV - Faut Qu' ça Pousse)",
+				"url":"#artiste/splinter",
+				"id":"",
+				"description":"Electro Tek",
+				"genre":"Electro Tek"
+		}
+	},
+
+	{
+		"date_start":"2014-06-14T19:00:00",
+		"date_end":"2014-06-14T21:00:00",
+		"artiste": {
+				"nom":"Hassah",
+				"url":"#artiste/hassah",
+				"id":"",
+				"description":"Latino",
+				"genre":"Latino",
+				"picture":"HASSAH-1.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-14T21:30:00",
+		"date_end":"2014-06-14T23:00:00",
+		"artiste": {
+				"nom":"ASAP",
+				"url":"#artiste/asap",
+				"id":"asap",
+				"description":"Rock",
+				"genre":"Rock",
+				"picture":"ASAP.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-14T23:30:00",
+		"date_end":"2014-06-15T01:00:00",
+		"artiste": {
+				"nom":"Booze Brothers",
+				"url":"#artiste/booze-brothers",
+				"id":"",
+				"description":"",
+				"genre":"",
+				"picture":"boozebrothers.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-15T01:30:00",
+		"date_end":"2014-06-15T03:00:00",
+		"artiste": {
+				"nom":"Da Krew Lab'",
+				"url":"#artiste/da-krew-lab",
+				"id":"",
+				"description":"Electo Break Drum'n Tek",
+				"genre":"Electo Break Drum'n Tek",
+				"picture":"DaKrewLab-500x500.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-15T03:30:00",
+		"date_end":"2014-06-15T05:00:00",
+		"artiste": {
+				"nom":"Messkla",
+				"url":"#artiste/messkla",
+				"id":"",
+				"description":"Bass Music Glitch Hop",
+				"genre":"Bass Music Glitch Hop",
+				"picture":"messkla.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-15T05:00:00",
+		"date_end":"2014-06-15T06:30:00",
+		"artiste": {
+				"nom":"Flashball 13",
+				"url":"#artiste/flashball-13",
+				"id":"",
+				"description":" Break Dubstep D&B ",
+				"genre":" Break Dubstep D&B ",
+				"picture":"flashball13.jpg"
+		}
+	},
+	{
+		"date_start":"2014-06-15T06:30:00",
+		"date_end":"2014-06-15T08:00:00",
+		"artiste": {
+				"nom":"Leolo Deeptrotter",
+				"url":"#artiste/leolo-deeptrotter",
+				"id":"",
+				"description":"Trance",
+				"genre":"Trance",
+				"picture":"leolo_deeptrotter.jpg"
+		}
+	}
+] 
