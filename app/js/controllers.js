@@ -57,10 +57,13 @@ appControllers.controller('ContactCtrl', ['$scope',
 			{
 				lat: +'43.110995',
 				lng: +'1.935181',
-				message: '<strong>Festival Ariege\'n ZIC</strong><br/>' +
-						 '<img src=\'img/logo1.png\' style="height:15px"/>' +
+				message: '<img src=\'img/logo1.png\' style="height:75px"/><br/>' +
+						 '<strong>Festival Ariege\'n ZIC</strong><br/><br/>' +
+						 '<img src=\'img/services.png\' style="height:30px"/><br/><br/>' +
+						 'Salle des fêtes de Malegoude<br/>' +
 						 '09500 Malegoude<br/><br/>' +
-						 'itinéraire : <a target="blank" href="https://maps.google.fr/maps?daddr=malegoude&hl=fr&ll=43.206177,2.109375&spn=0.912897,2.113495&sll=42.943856,1.50092&sspn=1.833603,4.22699&mra=ls&t=m&z=10">google map</a>',
+						 '<a target="blank" href="https://maps.google.fr/maps?daddr=malegoude&hl=fr&ll=43.206177,2.109375&spn=0.912897,2.113495&sll=42.943856,1.50092&sspn=1.833603,4.22699&mra=ls&t=m&z=10">'+
+						 'Itinéraire avec Google Map</a>',
 				focus: true,
 				draggable: false,
 				icon: {
