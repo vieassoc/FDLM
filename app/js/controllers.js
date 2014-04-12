@@ -11,7 +11,7 @@ appControllers.controller('MenuCtrl', ['$scope', 'Menu','$route',
 	function($scope, Menu, $route) {
 	$scope.menu = Menu.query();
 	$scope.isActive = function(part){
-		var current = window.location.href
+		var current = window.location.href;
 		var current_splited = current.split("/");
 		return ((current_splited[current_splited.length-2] === part) && (current_splited[current_splited.length-1] === "") || (current.indexOf(part.replace("#","")) > 0));
 	};
@@ -35,6 +35,13 @@ appControllers.controller('NewsListCtrl', ['$scope', 'News', 'Menu', 'Gallery',
 appControllers.controller('AssociationCtrl', ['$scope', 'Staff',
 	function($scope, Staff) {
 	$scope.staff = Staff.query();
+	}]);
+
+appControllers.controller('ProgrammationCtrl', ['$scope', '$filter', 'Programmation',
+	function($scope, $filter, Programmation) {
+	$scope.current_date = window.location.href.indexOf("vendredi")>0 ? "2014-06-13" : "2014-06-14";
+	console.log($scope.current_date);
+	$scope.programmations = Programmation.query();
 	}]);
 
 appControllers.controller('ContactCtrl', ['$scope',
