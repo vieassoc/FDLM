@@ -20,6 +20,7 @@ var App = angular.module('fdlmApp', [
 	'ngRoute',
 	'appControllers',
 	'appServices',
+	'appFilters',
 	'leaflet-directive',
 	'angularSmoothscroll',
 	'analytics',
