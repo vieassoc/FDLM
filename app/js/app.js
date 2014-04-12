@@ -33,10 +33,12 @@ App.config(['$routeProvider',
 				controller: 'NewsListCtrl'
 			}).
 			when('/programmation-ariege-n-zik-vendredi-13-juin-2014', {
-				templateUrl: 'partials/prog-vendredi.html'
+				templateUrl: 'partials/prog-vendredi.html',
+				controller: 'ProgrammationCtrl'
 			}).
 			when('/programmation-ariege-n-zik-samedi-14-juin-2014', {
-				templateUrl: 'partials/prog-samedi.html'
+				templateUrl: 'partials/prog-samedi.html',
+				controller: 'ProgrammationCtrl'
 			}).
 			when('/archive-faites-de-la-musique-fdlm-2013', {
 				templateUrl: 'partials/archive.html'
