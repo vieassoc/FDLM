@@ -21,9 +21,9 @@ a:active {
     display: inline-block;
     vertical-align: middle;
     max-height: 90px;
-	height: 90px;
+	height: 40px;
 	z-index: 100;
-    margin-top:-25px;
+    margin-top:5px;
     position: absolute;
     padding:0;
 
@@ -34,8 +34,8 @@ a:active {
 	    display: inline-block;
 	    vertical-align: middle;
 	    max-height: none;
-	    height: 130px;
-	    margin-top:-2px;
+	    height: 50px;
+	    margin-top:10px;
 	    position: absolute;
 	    /**-ms-transform: rotate(-8deg); /* IE 9 */
 	    /**-webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
