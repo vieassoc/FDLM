@@ -1,158 +1,211 @@
-[
-	{
-		"date_start":"2014-06-13T20:30:00",
-		"date_end":"2014-06-13T21:45:00",
-		"artiste": {
-				"nom":"CRITICAL QUARTET EXPERIENCE",
-				"url":"#artiste/critical-quartet-experience",
-				"id":"",
-				"description":"Groupement des WEC et des Black do",
-				"genre":"funk jazz rock",
-				"picture":"critical-quartet.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-13T22:15:00",
-		"date_end":"2014-06-13T23:30:00",
-		"artiste": {
-				"nom":"La petite fumée",
-				"url":"#artiste/camping-sauvage",
-				"id":"",
-				"description":"",
-				"genre":"Trance percu",
-				"picture":"petite-fumee.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-14T00:00:00",
-		"date_end":"2014-06-14T01:30:00",
-		"artiste": {
-				"nom":"Tremix",
-				"url":"#artiste/tremix",
-				"id":"",
-				"description":"Ska Rock Electro Balkan",
-				"genre":"Ska Rock Electro Balkan",
-				"picture":"tremix1.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-14T01:30:00",
-		"date_end":"2014-06-14T03:00:00",
-		"artiste": {
-				"nom":"Dr Fuzz",
-				"url":"#artiste/dr-fuzz",
-				"id":"",
-				"description":"Navalistyc Dubstep",
-				"genre":"Navalistyc Dubstep",
-				"picture":"dr-Fuzz.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-14T03:00:00",
-		"date_end":"2014-06-14T04:30:00",
-		"artiste": {
-				"nom":"Tofigniol (Rat 100 blé)",
-				"url":"#artiste/tofigniol",
-				"id":"",
-				"description":"Dub Dubstep D&B",
-				"genre":"Dub Dubstep D&B",
-				"picture":"tofigniol.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-14T04:30:00",
-		"date_end":"2014-06-14T06:00:00",
-		"artiste": {
-				"nom":"Splinter (Trucktown MAV - Faut Qu' ça Pousse)",
-				"url":"#artiste/splinter",
-				"id":"",
-				"description":"Electro Tek",
-				"genre":"Electro Tek"
-		}
-	},
-
-	{
-		"date_start":"2014-06-14T19:00:00",
-		"date_end":"2014-06-14T21:00:00",
-		"artiste": {
-				"nom":"Hassah",
-				"url":"#artiste/hassah",
-				"id":"",
-				"description":"Latino",
-				"genre":"Latino",
-				"picture":"HASSAH-1.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-14T21:30:00",
-		"date_end":"2014-06-14T23:00:00",
-		"artiste": {
-				"nom":"ASAP",
-				"url":"#artiste/asap",
-				"id":"asap",
-				"description":"Rock",
-				"genre":"Rock",
-				"picture":"ASAP.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-14T23:30:00",
-		"date_end":"2014-06-15T01:00:00",
-		"artiste": {
-				"nom":"Booze Brothers",
-				"url":"#artiste/booze-brothers",
-				"id":"",
-				"description":"",
-				"genre":"",
-				"picture":"boozebrothers.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-15T01:30:00",
-		"date_end":"2014-06-15T03:00:00",
-		"artiste": {
-				"nom":"Da Krew Lab'",
-				"url":"#artiste/da-krew-lab",
-				"id":"",
-				"description":"Electo Break Drum'n Tek",
-				"genre":"Electo Break Drum'n Tek",
-				"picture":"DaKrewLab-500x500.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-15T03:30:00",
-		"date_end":"2014-06-15T05:00:00",
-		"artiste": {
-				"nom":"Messkla",
-				"url":"#artiste/messkla",
-				"id":"",
-				"description":"Bass Music Glitch Hop",
-				"genre":"Bass Music Glitch Hop",
-				"picture":"messkla.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-15T05:00:00",
-		"date_end":"2014-06-15T06:30:00",
-		"artiste": {
-				"nom":"Flashball 13",
-				"url":"#artiste/flashball-13",
-				"id":"",
-				"description":" Break Dubstep D&B ",
-				"genre":" Break Dubstep D&B ",
-				"picture":"flashball13.jpg"
-		}
-	},
-	{
-		"date_start":"2014-06-15T06:30:00",
-		"date_end":"2014-06-15T08:00:00",
-		"artiste": {
-				"nom":"Leolo Deeptrotter",
-				"url":"#artiste/leolo-deeptrotter",
-				"id":"",
-				"description":"Trance",
-				"genre":"Trance",
-				"picture":"leolo_deeptrotter.jpg"
-		}
-	}
-] 
+[{
+    "date_start": "2014-06-13T20:30:00",
+    "date_end": "2014-06-13T21:45:00",
+    "artiste": {
+        "nom": "CRITICAL QUARTET EXPERIENCE",
+        "url": "https://www.facebook.com/CriticalQuartetExperience",
+        "url_describe": "Facebook",
+        "id": "",
+        "description": "Quatre jeunes Ariégeois issus de deux formations différentes (les Black do' et la Wec family) se rassemblent autour de leur passion commune pour le jazz.\nEntre réadaptations,standards et créations décalée ils jouent avec les codes et les conventions et nous offrent un style jazz/rock/funk énergique et éclectique pour le plaisir de tous.",
+        "genre": "funk jazz rock",
+        "picture": "critical-quartet.jpg",
+        "soundcloud_tracks": [{
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/100733656"
+        }, {
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/100733254"
+        }, {
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/100732408"
+        }]
+    }
+}, {
+    "date_start": "2014-06-13T22:15:00",
+    "date_end": "2014-06-13T23:30:00",
+    "artiste": {
+        "nom": "La P'tite Fumée",
+        "url": "https://www.facebook.com/laptitefumee",
+        "url_describe": "Facebook du groupe",
+        "id": "",
+        "description": "Originaire des Pyrénées Ariégeoise, la P'tite Fumée distille depuis début 2013 une musique actuelle aux accents tribaux. Une guitare accompagnée par deux Spacedrums explorant l'espace mélodique, la section rythmique assurée par le trio Percus/Basse/Batterie, sans oublier le grondement sans âge du Didgeridoo. Des cordes qui vibrent, des peaux tendus par le soleil, un son lourd et impulsif associé à l'harmonie cristalline des Spacedrums sont les ingrédients de la P'tite Fumée pour créer cet univers Tribal Acoustique!",
+        "genre": "Trance percu",
+        "picture": "petite-fumee.jpg",
+        "youtube_dual_video": [{
+            "url_video_1": "https://www.youtube-nocookie.com/embed/60R0Umh7xGw",
+            "url_video_2": "https://www.youtube-nocookie.com/embed/nvQ8gzwykC4"
+        }]
+    }
+}, {
+    "date_start": "2014-06-14T00:00:00",
+    "date_end": "2014-06-14T01:30:00",
+    "artiste": {
+        "nom": "Tremix",
+        "url": "http://www.tremix.fr",
+        "url_describe": "Site internet",
+        "id": "",
+        "description": "Des textes en français dans une gouaille alterno avérée offrent un regard épicé sur le monde tandis que les mélodies trimbalent des accents nomades. Le métissage est riche et Tremix élabore une tambouille loufoque et chaleureuse.",
+        "genre": "Ska Rock Electro Balkan",
+        "picture": "tremix1.jpg",
+        "youtube_dual_video": [{
+            "url_video_1": "https://www.youtube-nocookie.com/embed/QoXeM6yELmk",
+            "url_video_2": "https://www.youtube-nocookie.com/embed/jzltTvyaV44"
+        }]
+    }
+}, {
+    "date_start": "2014-06-14T01:30:00",
+    "date_end": "2014-06-14T03:00:00",
+    "artiste": {
+        "nom": "Dr Fuzz",
+        "url": "https://twitter.com/FuzZ_dubstep",
+        "url_describe": "Twitter",
+        "id": "",
+        "description": "2008 : Il participe à l'enregistrement de l'album 'Inside the Darkness' de Black Avenue et, fait une brève apparition avec Tremix lors de concerts (qui restent d'excellents souvenirs).Février 2012 : le projet Fuzz est né avec la chanson 'Fucking Panthera' et 'Make the Fuzz'.2012 à aujourd'hui : Orchestre Drakkar en tant que guitariste chanteur.2013 à aujourd'hui : TreMix - claviers chœurs machines et remixes. Il aura l'occasion de partager les scènes avec le Da Krew Lab, Chill Bill, Sychodelicious... et le 'Dr.' viendra se mettre devant 'Fuzz' se qui donne aujourd'hui 'Dr. Fuzz'",
+        "genre": "Navalistyc Dubstep",
+        "picture": "dr-Fuzz.jpg",
+        "soundcloud_tracks": [{
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/playlists/4347345"
+        }, {
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/100213618"
+        }, {
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/90901220"
+        }]
+    }
+}, {
+    "date_start": "2014-06-14T03:00:00",
+    "date_end": "2014-06-14T04:30:00",
+    "artiste": {
+        "nom": "Tofigniol (Rat 100 blé)",
+        "url": "#artiste/tofigniol",
+        "url_describe": "A trouver",
+        "id": "",
+        "description": "(Description manquante) Dub Dubstep D&B",
+        "genre": "Dub Dubstep D&B",
+        "picture": "tofigniol.jpg"
+    }
+}, {
+    "date_start": "2014-06-14T04:30:00",
+    "date_end": "2014-06-14T06:00:00",
+    "artiste": {
+        "nom": "Splinter",
+        "url": "https://soundcloud.com/splinter-mav",
+        "url_describe": "Soundcloud",
+        "id": "",
+        "description": "Emissaire ducollectif Faut que ça pousse! Electro Tek",
+        "genre": "Electro Tek",
+        "soundcloud_tracks": [{
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/120496453"
+        }, {
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/120487981"
+        }]
+    }
+}, {
+    "date_start": "2014-06-14T19:00:00",
+    "date_end": "2014-06-14T21:00:00",
+    "artiste": {
+        "nom": "Hassah",
+        "url": "http://www.hassah.com.sitew.com/",
+        "url_describe": "Site internet",
+        "id": "",
+        "description": "« Bom bom !! Tchikibom ! » Voici les termes qui caractérisent l’ambiance authentique etcolorée du duo « HASSAH ». C’est sous un soleil de plomb en Espagne que les frères TERUEL ont trouvé l’inspiration. La fusion brûlante que proposent Tomás et Roberto est constituée d’une guitare flamenca qui met en avant le coté « roots » de la rumba, de percussions latines qui apportent la fraîcheur de la salsa et le besoin naturel de se déhancher, ainsi que quelques « tchatches ragga ».",
+        "genre": "Latino",
+        "picture": "HASSAH-1.jpg",
+        "youtube_dual_video": [{
+            "url_video_1": "https://www.youtube-nocookie.com/embed/mF1Yp47UHmg",
+            "url_video_2": "https://www.youtube-nocookie.com/embed/ofAt7S-6vK4"
+        }]
+    }
+}, {
+    "date_start": "2014-06-14T21:30:00",
+    "date_end": "2014-06-14T23:00:00",
+    "artiste": {
+        "nom": "ASAP",
+        "url": "#artiste/asap",
+        "url_describe": "Facebook du groupe",
+        "id": "asap",
+        "description": "Rock",
+        "genre": "Rock",
+        "picture": "ASAP.jpg"
+    }
+}, {
+    "date_start": "2014-06-14T23:30:00",
+    "date_end": "2014-06-15T01:00:00",
+    "artiste": {
+        "nom": "Booze Brothers",
+        "url": "#artiste/booze-brothers",
+        "url_describe": "Facebook du groupe",
+        "id": "",
+        "description": "Crées en 1998, the Booze Brothers – and sisters -  trouvent leur style définitif en 2003 et leur line up idéal en 2008. Composé de six membres, le groupe sillonne la route pour faire ingurgiter au plus grand nombre un trad punk irlandais aussi épais et enivrant que la Stout.",
+        "genre": "",
+        "picture": "boozebrothers.jpg",
+        "soundcloud_tracks": [{
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/58897991"
+        }, {
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/80084873"
+        }]
+    }
+}, {
+    "date_start": "2014-06-15T01:30:00",
+    "date_end": "2014-06-15T03:00:00",
+    "artiste": {
+        "nom": "DaKrewLab",
+        "url": "https://www.facebook.com/pages/Dakrewlab/282568945110616",
+        "url_describe": "Facebook",
+        "id": "",
+        "description": "Live 100% création joué en direct sur des contrôleurs électroniques variés (Pads, Joystick, Pavés tactiles)",
+        "genre": "Electo Break Drum'n Tek",
+        "picture": "DaKrewLab-500x500.jpg",
+        "youtube_dual_video": [{
+            "url_video_1": "https://www.youtube-nocookie.com/embed/XQnjNVCsL0U",
+            "url_video_2": "https://www.youtube-nocookie.com/embed/wB5uTKB79Dw"
+        }]
+    }
+}, {
+    "date_start": "2014-06-15T03:30:00",
+    "date_end": "2014-06-15T05:00:00",
+    "artiste": {
+        "nom": "Messkla",
+        "url": "https://soundcloud.com/messkla",
+        "url_describe": "Facebook du groupe",
+        "id": "",
+        "description": "From a very tender age, I have been a great music lover. During my adolescence, I have been brought up on Hip-Hop culture and started mixing Dubstep on vinyles in free underground parties in 2006. Being fond of fat bass scores and of dark atmospheres, I ban from my sets high-pitched and tuneful synthesizers, as well as voices from commercial pop and RNB music, or overbrodcasted songs. My sets are extremely varied, as well as regards styles, ambiances or BPM, going from Dubstep, Grime, Neuro/Glitch-Hop, to Electro, Break, Drum/Drumstep, or, of course, Hip-Hop.",
+        "genre": "Bass Music Glitch Hop",
+        "picture": "messkla.jpg",
+        "soundcloud_tracks": [{
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/88778914"
+        }, {
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/109552558"
+        }]
+    }
+}, {
+    "date_start": "2014-06-15T05:00:00",
+    "date_end": "2014-06-15T06:30:00",
+    "artiste": {
+        "nom": "Flashball 13",
+        "url": "https://soundcloud.com/flashball13",
+        "url_describe": "Soundcloud",
+        "id": "",
+        "description": " Break Dubstep D&B ",
+        "genre": " Break Dubstep D&B ",
+        "picture": "flashball13.jpg",
+        "soundcloud_tracks": [{
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/112656070"
+        }, {
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/79614974"
+        }]
+    }
+}, {
+    "date_start": "2014-06-15T06:30:00",
+    "date_end": "2014-06-15T08:00:00",
+    "artiste": {
+        "nom": "Leolo Deeptrotter",
+        "url": "https://soundcloud.com/leolomix",
+        "url_describe": "Soundcloud",
+        "id": "",
+        "description": "Léo – alias Léolo – découvre la musique électronique en 2001. Une rencontre qui le plonge dans un dédale d'expériences entre hip hop, dub et jungle. Derrière ses platines, il ouvre le jeu... En 2006, il émerge sur des radios et scènes locales du sud de la France avec des sets drum. Arpentant le milieu underground avec son bac, il perfectionne son jeu mais ne s'arrête pas là. Léolo participe à la fondation d'un crew alternatif, la Biomeka Tribe, et collabore avec d' autres associations comme To the moon, Bouge ou Beip. En 2009, au détour d'une ruelle Londonienne il rencontre la scène trance, s'ouvre à d'autres univers sonores et chemine avec diverses associations.",
+        "genre": "Trance",
+        "picture": "leolo_deeptrotter.jpg",
+        "soundcloud_tracks": [{
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/123470007"
+        }, {
+            "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/119228585"
+        }]
+    }
+}]

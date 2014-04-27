@@ -6,10 +6,10 @@
 
 				<h1 class="home-heading">
 					<span class="home-heading-line bold">Ariège'n Zic</span><br>
-					<span class="home-heading-line">Le festival de musique en Ariège </span>
+					<span class="home-heading-line">L’Ariège de toutes les musiques</span>
 				</h1>
 				
-				<a class="g-btn type_primary size_big green" smooth-scroll-jquery target="about" speed="1000"><span>Continuez votre navigation <i class="fa fa-arrow-down"></i></span></a>
+				<a class="g-btn type_primary size_big green" scroll-to="#about" duration="800" offset="50"><span>Continuez votre navigation <i class="fa fa-arrow-down"></i></span></a>
 
 			</div>
 		</div>
@@ -66,9 +66,9 @@
 											<div class="w-blog-entry-short" ng-if="news_partials.type=='PartialText'">
 												<p ng-bind-html="news_partials.text"></p>
 											</div>
-											<!--<div class="flex-video widescreen" ng-if="news_partials.type=='PartialYoutube'">
+											<div class="flex-video widescreen" ng-if="news_partials.type=='PartialYoutube'">
 												<iframe ng-src="{{getSrcYoutube(news_partials.youtube_slug)}}" frameborder="0" allowfullscreen=""></iframe>
-											</div>-->
+											</div>
 										</div>
 
 									</div>
