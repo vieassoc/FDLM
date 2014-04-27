@@ -180,3 +180,13 @@ a:active {
 .button_show{
     cursor: pointer;
 }
+#countdown{
+    display: block;
+    font-size: 55px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.imgpos_atleft .w-blog-entry{
+    padding-bottom: 10px;
+}
