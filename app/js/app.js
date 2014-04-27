@@ -23,7 +23,7 @@ var App = angular.module('fdlmApp', [
     'appServices',
     'appFilters',
     'leaflet-directive',
-    'angularSmoothscroll',
+    'scrollto',
     'analytics',
 ]);
 
