@@ -27,33 +27,13 @@
 				<p class="size_big">This is our dedicated team who work day-in and day-out together to bring our clients<br>the most amazing projects for a digitally connected world.</p>
 				-->
 				<div class="g-hr type_invisible"></div>
-				<div class="w-gallery size_l">
-					<div class="w-gallery-h">
-						<div class="w-gallery-tnails">
-							<div class="w-gallery-tnails-h">
-								<a class="w-gallery-tnail" href="img/affiche_302x402.png" title="Recto de l'affiche Ariege'n Zik">
-									<span class="w-gallery-tnail-h">
-										<img class="w-gallery-tnail-img" src="img/affiche_302x402.png" alt="Verso de l'affiche Ariege'n Zik">
-										<span class="w-gallery-tnail-hover"><i class="fa fa-search"></i></span>
-									</span>
-								</a>
-							
-								<a class="w-gallery-tnail" href="img/ariegenzik_fly_verso.png" title="Verso du flyer Ariege'n Zik">
-									<span class="w-gallery-tnail-h">
-										<img class="w-gallery-tnail-img" src="img/ariegenzik_fly_verso.png" alt="Verso du flyer Ariege'n Zik">
-										<span class="w-gallery-tnail-hover"><i class="fa fa-search"></i></span>
-									</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
+				<div ng-include="'partials/affiches.html'"></div>
 				<div ng-include="'partials/timeline.html'"></div>				
 			</div>
 		</div>
 	</div>
 </section>
+
 <script type="text/javascript">
 	window.resizeHandler();
 	window.scrollTo(0,0);
