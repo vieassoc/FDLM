@@ -59,15 +59,22 @@
 												<span class="w-blog-entry-meta-date-year" ng-bind="new.updated_at | date:'yyyy'">2013</span>
 											</div>
 										</div>
-										<div ng-repeat="news_partials in new.data">
+										<div ng-repeat="news_partials in new.data" ng-init="focused=False;">
 											<h2 class="w-blog-entry-title" ng-if="news_partials.type=='PartialTitle'">
 												<span class="w-blog-entry-title-h" ng-bind="news_partials.title"></span>
 											</h2>
 											<div class="w-blog-entry-short" ng-if="news_partials.type=='PartialText'">
 												<p ng-bind-html="news_partials.text"></p>
 											</div>
-											<div class="flex-video widescreen" ng-if="news_partials.type=='PartialYoutube'">
-												<iframe ng-src="{{getSrcYoutube(news_partials.youtube_slug)}}" frameborder="0" allowfullscreen=""></iframe>
+											<div ng-if="news_partials.type=='PartialYoutube'">
+												<div ng-click="focused=!focused">
+														Voir vidéo
+														<i ng-show="!focused" class="fa fa-plus-circle fa-4" style="color:#F8862C;"></i>
+														<i ng-show="focused" class="fa fa-minus-circle fa-4" style="color:#F8862C;"></i>
+												</div>
+												<div class="flex-video widescreen" ng-if="focused">
+													<iframe ng-src="{{getSrcYoutube(news_partials.youtube_slug)}}" frameborder="0" allowfullscreen=""></iframe>
+												</div>
 											</div>
 										</div>
 
