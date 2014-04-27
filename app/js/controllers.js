@@ -63,7 +63,7 @@ appControllers.controller('ContactCtrl', ['$scope',
             markers: [{
                 lat: +'43.110995',
                 lng: +'1.935181',
-                message: '<img src=\'img/logo1.png\' style="height:75px"/><br/>' +
+                message: '<img src=\'img/logo1v1.png\' style="height:75px"/><br/>' +
                     '<strong>Festival Ariege\'n ZIC</strong><br/><br/>' +
                     '<img src=\'img/services.png\' style="height:30px"/><br/><br/>' +
                     'Salle des fêtes de Malegoude<br/>' +

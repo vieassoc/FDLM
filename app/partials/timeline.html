@@ -23,10 +23,10 @@
 					</a>
 				</div>
 				<div class="col-sm-12 col-xs-12" ng-init="music_showed = False;" ng-if="programmation.artiste.youtube_dual_video || programmation.artiste.soundcloud_tracks">
-					<div ng-click="music_showed=!music_showed">
+					<div class="button_show" ng-click="music_showed=!music_showed">
 						Ecouter
-						<i ng-show="music_showed" class="fa fa-plus-circle fa-4" style="color:#F8862C;"></i>
-						<i ng-show="!music_showed" class="fa fa-minus-circle fa-4" style="color:#F8862C;"></i>
+						<i ng-show="!music_showed" class="fa fa-plus-circle fa-4" style="color:#F8862C;"></i>
+						<i ng-show="music_showed" class="fa fa-minus-circle fa-4" style="color:#F8862C;"></i>
 					</div>
 					<div class="hidden-music" ng-if="music_showed">
 						<div ng-repeat="soundcloud_track in programmation.artiste.soundcloud_tracks">
