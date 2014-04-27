@@ -176,3 +176,7 @@ a:active {
         padding-left: 0;
     }
 }
+
+.button_show{
+    cursor: pointer;
+}
