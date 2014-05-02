@@ -24,8 +24,8 @@ appControllers.controller('TemplateCtrl', ['$scope', 'GeneralInformation',
     }
 ]);
 
-appControllers.controller('NewsListCtrl', ['$scope', 'News', 'Menu', 'Gallery',
-    function($scope, News, Menu, Gallery) {
+appControllers.controller('NewsListCtrl', ['$scope', '$filter', 'News', 'Menu', 'Gallery',
+    function($scope, $filter, News, Menu, Gallery) {
         $scope.news = News.query();
         $scope.menu = Menu.query();
         $scope.gallery = Gallery.query({
@@ -46,7 +46,6 @@ appControllers.controller('AssociationCtrl', ['$scope', 'Staff',
 appControllers.controller('ProgrammationCtrl', ['$scope', '$filter', 'Programmation',
     function($scope, $filter, Programmation) {
         $scope.current_date = window.location.href.indexOf("vendredi") > 0 ? "2014-06-13" : "2014-06-14";
-        console.log($scope.current_date);
         $scope.programmations = Programmation.query();
     }
 ]);

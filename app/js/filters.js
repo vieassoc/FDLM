@@ -22,3 +22,22 @@ appFilters.filter("isConcerned", function(){
 		return filtered_list;
 	}
 });
+appFilters.filter("isFreshNews", function(){
+    return function(newsList, date1) {
+        var filtered_list = [];
+        var minimalDate = new Date(date1);
+        angular.forEach(newsList, function (news) {
+            var newsDateCreation = new Date(news.updated_at);
+            if (minimalDate <= newsDateCreation) {
+                filtered_list.push(news);
+            }
+        });
+
+        filtered_list.sort(function(a, b) {
+            a = new Date(a.updated_at);
+            b = new Date(b.updated_at);
+            return a<b ? 1 : a>b ? -1 : 0;
+        });
+        return filtered_list;
+    }
+});

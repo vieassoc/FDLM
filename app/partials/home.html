@@ -49,7 +49,7 @@
 				<div class="w-blog imgpos_atleft more_hidden">
 					<div class="w-blog-h">
 						<div class="w-blog-list">
-							<div class="w-blog-entry" ng-repeat="new in news">
+							<div class="w-blog-entry" ng-repeat="new in news  | isFreshNews:'2014-04-01'">
 								<div class="w-blog-entry-h">
 									<div class="w-blog-entry-body">
 										<div class="w-blog-entry-meta">
