@@ -27,8 +27,9 @@ var App = angular.module('fdlmApp', [
     'analytics',
 ]);
 
-App.config(['$routeProvider',
-    function($routeProvider) {
+App.config(['$routeProvider', '$locationProvider',
+    function($routeProvider, $locationProvider) {
+        $locationProvider.hashPrefix('!');
         $routeProvider.
         when('/', {
             templateUrl: 'partials/home.html',
