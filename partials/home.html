@@ -27,8 +27,8 @@
 				<span id="countdown">
 				</span>
 				<div>
-				<a class="g-btn type_primary" href="#programmation-ariege-n-zik-vendredi-13-juin-2014"><span> Programme du Vendredi 13 Juin</span></a>
-				<a class="g-btn type_primary" href="#programmation-ariege-n-zik-samedi-14-juin-2014"><span>Programme du Samedi 14 Juin</span></a>
+				<a class="g-btn type_primary" href="/#!/programmation-ariege-n-zik-vendredi-13-juin-2014"><span> Programme du Vendredi 13 Juin</span></a>
+				<a class="g-btn type_primary" href="/#!/programmation-ariege-n-zik-samedi-14-juin-2014"><span>Programme du Samedi 14 Juin</span></a>
 				</div>
 			</div>
 		</div>
@@ -49,7 +49,7 @@
 				<div class="w-blog imgpos_atleft more_hidden">
 					<div class="w-blog-h">
 						<div class="w-blog-list">
-							<div class="w-blog-entry" ng-repeat="new in news">
+							<div class="w-blog-entry" ng-repeat="new in news  | isFreshNews:'2014-04-01'">
 								<div class="w-blog-entry-h">
 									<div class="w-blog-entry-body">
 										<div class="w-blog-entry-meta">

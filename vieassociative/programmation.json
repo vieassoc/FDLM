@@ -117,12 +117,17 @@
     "date_end": "2014-06-14T23:00:00",
     "artiste": {
         "nom": "ASAP",
-        "url": "#artiste/asap",
-        "url_describe": "Facebook du groupe",
+        "url": "http://www.noomiz.com/asappowerpop",
+        "url_describe": "Noomiz",
         "id": "asap",
-        "description": "Rock",
+        "description": "ASAP existe depuis 10 ans. Pascal, le créateur du band, et Jérôme, sont là depuis le début. Plusieurs batteurs se sont succédés mais un irréductible gaulois, Vincent, joueur de tambourins, a accepté de se mettre à vrai instrument, la batterie, et a rejoint la troupe en 2003. Il y a eu aussi plusieurs chanteuses, car Asap c'est avant tout deux voix, mais surtout une féminine, et toutes ces chanteuses ont su mettre leurs influences dans les compositions. Depuis 4 ans, l'actuelle chanteuse Mary a intégré le groupe et a trouvé sa place parmi ces ogres bourrins au grand cœur. Désormais, ASAP connait l'harmonie et ne compte plus voir un de ces membres partir. \" Soudés comme les doigts de la main \"",
         "genre": "Rock",
-        "picture": "ASAP.jpg"
+        "picture": "ASAP.jpg",
+        "youtube_dual_video": [{
+            "url_video_1": "https://www.youtube-nocookie.com/embed/D9DYpWNU55E",
+            "url_video_2": "https://www.youtube-nocookie.com/embed/uJfI40sLREY"
+        }]
+
     }
 }, {
     "date_start": "2014-06-14T23:30:00",
@@ -165,7 +170,7 @@
         "url": "https://soundcloud.com/messkla",
         "url_describe": "Facebook du groupe",
         "id": "",
-        "description": "From a very tender age, I have been a great music lover. During my adolescence, I have been brought up on Hip-Hop culture and started mixing Dubstep on vinyles in free underground parties in 2006. Being fond of fat bass scores and of dark atmospheres, I ban from my sets high-pitched and tuneful synthesizers, as well as voices from commercial pop and RNB music, or overbrodcasted songs. My sets are extremely varied, as well as regards styles, ambiances or BPM, going from Dubstep, Grime, Neuro/Glitch-Hop, to Electro, Break, Drum/Drumstep, or, of course, Hip-Hop.",
+        "description": "Break Dubstep glitch hop; Initialement bercée par la culture Hip-Hop, Messkla aka Mess Basstarde commence à mixer du Dubstep sur vinyles en 2006.",
         "genre": "Bass Music Glitch Hop",
         "picture": "messkla.jpg",
         "soundcloud_tracks": [{
@@ -182,7 +187,7 @@
         "url": "https://soundcloud.com/flashball13",
         "url_describe": "Soundcloud",
         "id": "",
-        "description": " Break Dubstep D&B ",
+        "description": " Flash ball 13 : Guitariste issu de la scène Punk/Hardcore bordelaise, Flashball13 tombe amoureux de la Drum & Bass dans le milieu des années 90.",
         "genre": " Break Dubstep D&B ",
         "picture": "flashball13.jpg",
         "soundcloud_tracks": [{
