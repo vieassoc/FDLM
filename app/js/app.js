@@ -35,11 +35,11 @@ App.config(['$routeProvider', '$locationProvider',
             templateUrl: 'partials/home.html',
             controller: 'NewsListCtrl'
         }).
-        when('/programmation-ariege-n-zik-vendredi-13-juin-2014', {
+        when('/programmation-ariege-n-zic-vendredi-13-juin-2014', {
             templateUrl: 'partials/prog-vendredi.html',
             controller: 'ProgrammationCtrl'
         }).
-        when('/programmation-ariege-n-zik-samedi-14-juin-2014', {
+        when('/programmation-ariege-n-zic-samedi-14-juin-2014', {
             templateUrl: 'partials/prog-samedi.html',
             controller: 'ProgrammationCtrl'
         }).
