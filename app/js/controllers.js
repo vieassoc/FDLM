@@ -24,8 +24,14 @@ appControllers.controller('TemplateCtrl', ['$scope', 'GeneralInformation',
     }
 ]);
 
-appControllers.controller('NewsListCtrl', ['$scope', '$filter', 'News', 'Menu', 'Gallery',
-    function($scope, $filter, News, Menu, Gallery) {
+appControllers.controller('ArchiveCtrl', ['Page',
+    function(Page) {
+        Page.setTitle("Edition 2013 de Faites de la Musique à Malegoude - Ariege'n ZIC");
+    }
+]);
+appControllers.controller('NewsListCtrl', ['$scope', '$filter', 'News', 'Menu', 'Gallery', 'Page',
+    function($scope, $filter, News, Menu, Gallery, Page) {
+        Page.setTitle("Accueil - Ariege'n ZIC");
         $scope.news = News.query();
         $scope.menu = Menu.query();
         $scope.gallery = Gallery.query({
@@ -37,21 +43,32 @@ appControllers.controller('NewsListCtrl', ['$scope', '$filter', 'News', 'Menu', 
     }
 ]);
 
-appControllers.controller('AssociationCtrl', ['$scope', 'Staff',
-    function($scope, Staff) {
+appControllers.controller('AssociationCtrl', ['$scope', 'Staff', 'Page',
+    function($scope, Staff, Page) {
+        Page.setTitle("Rejoignez nous ! - Ariege'n ZIC");
         $scope.staff = Staff.query();
     }
 ]);
 
-appControllers.controller('ProgrammationCtrl', ['$scope', '$filter', 'Programmation',
-    function($scope, $filter, Programmation) {
+appControllers.controller('ProgrammationCtrl', ['$scope', '$filter', 'Programmation', 'Page',
+    function($scope, $filter, Programmation, Page) {
         $scope.current_date = window.location.href.indexOf("vendredi") > 0 ? "2014-06-13" : "2014-06-14";
+        if ($scope.current_date == "2014-06-13") {
+            Page.setTitle("Programmation du Vendredi 13 Juin à Malegoude - Ariege'n ZIC");
+        } else {
+            Page.setTitle("Programmation du Samedi 14 Juin à Malegoude - Ariege'n ZIC");
+        }
         $scope.programmations = Programmation.query();
     }
 ]);
-
-appControllers.controller('ContactCtrl', ['$scope',
-    function($scope) {
+appControllers.controller('titleCtrl', ['$scope', 'Page',
+    function($scope, Page) {
+        $scope.Page = Page;
+    }
+]);
+appControllers.controller('ContactCtrl', ['$scope', 'Page',
+    function($scope, Page) {
+        Page.setTitle("Toutes les infos du Festival ! - Ariege'n ZIC");
         /** Leaflet Configuration**/
         angular.extend($scope, {
             center: {

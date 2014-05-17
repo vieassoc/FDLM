@@ -44,7 +44,8 @@ App.config(['$routeProvider', '$locationProvider',
             controller: 'ProgrammationCtrl'
         }).
         when('/archive-faites-de-la-musique-fdlm-2013', {
-            templateUrl: 'partials/archive.html'
+            templateUrl: 'partials/archive.html',
+            controller: 'ArchiveCtrl'
         }).
         when('/association-faites-de-la-musique', {
             templateUrl: 'partials/association.html',
@@ -52,10 +53,6 @@ App.config(['$routeProvider', '$locationProvider',
         }).
         when('/contact', {
             templateUrl: 'partials/contact.html',
-            controller: 'ContactCtrl'
-        }).
-        when('/artiste/hassah', {
-            templateUrl: 'partials/artiste.html',
             controller: 'ContactCtrl'
         }).
         otherwise({
