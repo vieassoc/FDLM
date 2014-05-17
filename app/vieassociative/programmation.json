@@ -69,8 +69,8 @@
         }]
     }
 }, {
-    "date_start": "2014-06-14T03:00:00",
-    "date_end": "2014-06-14T04:30:00",
+    "date_start": "2014-06-14T04:30:00",
+    "date_end": "2014-06-14T06:00:00",
     "artiste": {
         "nom": "Tofigniol (Rat 100 blé)",
         "url": "#artiste/tofigniol",
@@ -81,20 +81,21 @@
         "picture": "tofigniol.jpg"
     }
 }, {
-    "date_start": "2014-06-14T04:30:00",
-    "date_end": "2014-06-14T06:00:00",
+    "date_start": "2014-06-14T03:00:00",
+    "date_end": "2014-06-14T04:30:00",
     "artiste": {
         "nom": "Splinter",
         "url": "https://soundcloud.com/splinter-mav",
         "url_describe": "Soundcloud",
         "id": "",
-        "description": "Emissaire ducollectif Faut que ça pousse! Electro Tek",
+        "description": "Emissaire du collectif Faut que ça pousse! Amateur de musique éléctronique en particulier de Drum&Bass depuis son adolescence, il a commencé à mixer sur vinyls il y a quelques années.",
         "genre": "Electro Tek",
         "soundcloud_tracks": [{
             "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/120496453"
         }, {
             "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/120487981"
-        }]
+        }],
+        "picture": "splinter.jpg"
     }
 }, {
     "date_start": "2014-06-14T19:00:00",
@@ -187,7 +188,7 @@
         "url": "https://soundcloud.com/flashball13",
         "url_describe": "Soundcloud",
         "id": "",
-        "description": " Flash ball 13 : Guitariste issu de la scène Punk/Hardcore bordelaise, Flashball13 tombe amoureux de la Drum & Bass dans le milieu des années 90.",
+        "description": " Flash ball 13 : Guitariste issu de la scène Punk/Hardcore bordelaise, il tombe amoureux de la Drum & Bass dans le milieu des années 90. Avec Messkla, ils sont également animateurs du Bass Vision Radio Show sur FMR et font partie du crew Ombilikal à Toulouse. Aujourd'hui, ils fusionnent leurs styles et proposent des mixes énergiques aux sélections pointues orientées Bass Music/Neurohop.",
         "genre": " Break Dubstep D&B ",
         "picture": "flashball13.jpg",
         "soundcloud_tracks": [{
