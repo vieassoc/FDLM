@@ -63,47 +63,15 @@
 					<div class="w-logo" ng-controller="TemplateCtrl">
 						<div class="w-logo-h">
 							<a class="w-logo-link" href="#/">
-								<img class="w-logo-img" ng-src="{{general_info.logo_url}}" alt="CORSA">
+								<img class="w-logo-img" ng-src="{{general_info.logo_url}}" alt="Ariege'n Zic">
 								<span class="w-logo-title">
-									<span class="w-logo-title-h">Ariege'n Zik</span>
+									<span class="w-logo-title-h">Ariege'n Zic</span>
 								</span>
 							</a>
 						</div>
 					</div>
 					<!-- nav -->
-					<nav class="w-nav">
-						<div class="w-nav-h">
-							<div class="w-nav-control">
-								<i class="fa fa-bars"></i>
-							</div>
-							<div class="w-nav-list layout_hor width_auto level_1">
-								<div class="w-nav-list-h" ng-controller="MenuCtrl">
-									<div class="w-nav-item level_1" ng-repeat="item in menu">
-										<div class="w-nav-item-h" ng-if="item.level_1==false">
-											<a href="{{item.url}}" class="w-nav-anchor level_1" ng-class="{ active: isActive(item.url) }"><span class="w-nav-title">{{item.nom}}</span><span class="w-nav-hint"></span></a>
-										</div>
-										<div class="w-nav-item level_1 with_sublevel active" ng-if="item.level_1==true">
-											<div class="w-nav-item-h">
-												<a href="{{item.url}}" class="w-nav-anchor level_1" ng-class="{ active: isActive(item.url) }"><span class="w-nav-title">{{item.nom}}</span><span class="w-nav-hint"></span></a>
-												
-												<!-- level 2 -->
-												<div class="w-nav-list place_down show_onhover level_2">
-													<div class="w-nav-list-h">
-														<div class="w-nav-item level_2 active">
-															<div class="w-nav-item-h" ng-repeat="submenu in item.submenu">
-																<a href="{{submenu.url}}" class="w-nav-anchor level_2" ng-class="{ active: isActive(submenu.url) }"><span class="w-nav-title">{{submenu.nom}}</span><span class="w-nav-hint"></span></a>
-															</div>
-														</div>
-													</div>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</nav>
+					<div ng-include="'partials/menu.html'"></div>
 
 				</div>
 			</div>
@@ -194,6 +162,7 @@
 	<script type="text/javascript" src="js/vendor/jquery.queryloader2.js"></script>
 	<script type="text/javascript" src="js/vendor/responsive.js"></script>
 	<script type="text/javascript" src="js/vendor/plugins.js"></script>
+	<script type="text/javascript" src="js/vendor/jquery.easing.min.js"></script>  
 	<!-- endbuild -->
 	
     <script src="bower_components/leaflet-dist/leaflet.js"></script>

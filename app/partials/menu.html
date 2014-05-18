@@ -1,0 +1,30 @@
+<nav class="w-nav">
+	<div class="w-nav-h">
+		<div class="w-nav-control">
+			<i class="fa fa-bars"></i>
+		</div>
+		<div class="w-nav-list layout_hor width_auto level_1">
+			<div class="w-nav-list-h" ng-controller="MenuCtrl">
+				<div class="w-nav-item level_1" ng-repeat="item in menu" ng-class="{ with_sublevel: item.level_1, active: isActive(item.url, item.key) }">
+					<div class="w-nav-item-h">
+						<a href="{{item.url}}" class="w-nav-anchor level_1">
+							<span class="w-nav-title">{{item.nom}}</span>
+							<span class="w-nav-hint"></span>
+						</a>
+						<!-- level 2 -->
+						<div class="w-nav-list place_down show_onhover level_2">
+							<div class="w-nav-list-h">
+								<div class="w-nav-item level_2" ng-repeat="submenu in item.submenu" ng-class="{ active: isActive(submenu.url) }">
+									<div class="w-nav-item-h">
+										<a href="{{submenu.url}}" class="w-nav-anchor level_2"><span class="w-nav-title">{{submenu.nom}}</span><span class="w-nav-hint"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

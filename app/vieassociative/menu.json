@@ -4,6 +4,7 @@
     "level_1": false
 }, {
     "nom": "Programmation 2014",
+    "key" : "programmation",
     "url": "/#!/programmation-ariege-n-zic-vendredi-13-juin-2014",
     "level_1": true,
     "submenu": [{

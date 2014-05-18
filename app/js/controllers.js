@@ -10,10 +10,9 @@ var appControllers = angular.module('appControllers', [
 appControllers.controller('MenuCtrl', ['$scope', 'Menu', '$route',
     function($scope, Menu, $route) {
         $scope.menu = Menu.query();
-        $scope.isActive = function(part) {
-            var current = window.location.href;
-            var current_splited = current.split("/");
-            return ((current_splited[current_splited.length - 2] === part) && (current_splited[current_splited.length - 1] === "") || (current.indexOf(part.replace("#", "")) > 0));
+        $scope.isActive = function(part, key) {
+            var current =  '/' + window.location.hash;
+            return ((current).indexOf(key) > -1) || (current == part);
         };
     }
 ]);
@@ -29,11 +28,11 @@ appControllers.controller('ArchiveCtrl', ['Page',
         Page.setTitle("Edition 2013 de Faites de la Musique à Malegoude - Ariege'n ZIC");
     }
 ]);
+
 appControllers.controller('NewsListCtrl', ['$scope', '$filter', 'News', 'Menu', 'Gallery', 'Page',
-    function($scope, $filter, News, Menu, Gallery, Page) {
+    function($scope, $filter, News, Gallery, Page) {
         Page.setTitle("Accueil - Ariege'n ZIC");
         $scope.news = News.query();
-        $scope.menu = Menu.query();
         $scope.gallery = Gallery.query({
             'idGallery': 1
         });
@@ -59,13 +58,20 @@ appControllers.controller('ProgrammationCtrl', ['$scope', '$filter', 'Programmat
             Page.setTitle("Programmation du Samedi 14 Juin à Malegoude - Ariege'n ZIC");
         }
         $scope.programmations = Programmation.query();
+        /**
+        $scope.$on('$viewContentLoaded', function() {
+            angular.element(".g-btn.type_primary.green").click();
+        });
+        **/
     }
 ]);
+
 appControllers.controller('titleCtrl', ['$scope', 'Page',
     function($scope, Page) {
         $scope.Page = Page;
     }
 ]);
+
 appControllers.controller('ContactCtrl', ['$scope', 'Page',
     function($scope, Page) {
         Page.setTitle("Toutes les infos du Festival ! - Ariege'n ZIC");
