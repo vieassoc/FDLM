@@ -11,7 +11,7 @@ appControllers.controller('MenuCtrl', ['$scope', 'Menu', '$route',
     function($scope, Menu, $route) {
         $scope.menu = Menu.query();
         $scope.isActive = function(part, key) {
-            var current =  '/' + window.location.hash;
+            var current = '/' + window.location.hash;
             return ((current).indexOf(key) > -1) || (current == part);
         };
     }
@@ -29,7 +29,7 @@ appControllers.controller('ArchiveCtrl', ['Page',
     }
 ]);
 
-appControllers.controller('NewsListCtrl', ['$scope', '$filter', 'News', 'Menu', 'Gallery', 'Page',
+appControllers.controller('NewsListCtrl', ['$scope', '$filter', 'News', 'Gallery', 'Page',
     function($scope, $filter, News, Gallery, Page) {
         Page.setTitle("Accueil - Ariege'n ZIC");
         $scope.news = News.query();

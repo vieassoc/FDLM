@@ -73,10 +73,10 @@
     "date_end": "2014-06-14T06:00:00",
     "artiste": {
         "nom": "Tofigniol (Rat 100 blé)",
-        "url": "#artiste/tofigniol",
+        "url": "https://www.facebook.com/media/set/?set=a.410439445702220.97030.341225682623597&type=3",
         "url_describe": "A trouver",
         "id": "",
-        "description": "(Description manquante) Dub Dubstep D&B",
+        "description": "Dub Dubstep D&B",
         "genre": "Dub Dubstep D&B",
         "picture": "tofigniol.jpg"
     }
@@ -135,12 +135,16 @@
     "date_end": "2014-06-15T01:00:00",
     "artiste": {
         "nom": "Booze Brothers",
-        "url": "#artiste/booze-brothers",
+        "url": "https://www.facebook.com/booze.brothers.18",
         "url_describe": "Facebook du groupe",
         "id": "",
         "description": "Crées en 1998, the Booze Brothers – and sisters -  trouvent leur style définitif en 2003 et leur line up idéal en 2008. Composé de six membres, le groupe sillonne la route pour faire ingurgiter au plus grand nombre un trad punk irlandais aussi épais et enivrant que la Stout.",
         "genre": "",
         "picture": "boozebrothers.jpg",
+        "youtube_dual_video": [{
+            "url_video_1": "https://www.youtube-nocookie.com/embed/9hsMqYjPbwI",
+            "url_video_2": "https://www.youtube-nocookie.com/embed/xragfTsoVVk"
+        }],
         "soundcloud_tracks": [{
             "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/58897991"
         }, {
