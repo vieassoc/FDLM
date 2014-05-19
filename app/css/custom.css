@@ -190,3 +190,12 @@ a:active {
 .imgpos_atleft .w-blog-entry{
     padding-bottom: 10px;
 }
+
+.programmation-splashscreen{
+    position: relative;
+}
+
+.programmation-buttons{
+    position: absolute;
+    bottom: 5%;
+}
