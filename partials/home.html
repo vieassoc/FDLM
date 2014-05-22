@@ -76,6 +76,9 @@
 													<iframe ng-src="{{getSrcYoutube(news_partials.youtube_slug)}}" frameborder="0" allowfullscreen=""></iframe>
 												</div>
 											</div>
+											<div ng-if="news_partials.type=='PartialOnePicture'" style="text-align: center;">
+												<img ng-src="{{news_partials.img_url}}" style="max-height: 300px;">
+											</div>
 										</div>
 
 									</div>
