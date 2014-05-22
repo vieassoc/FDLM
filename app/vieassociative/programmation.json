@@ -43,10 +43,13 @@
         "id": "",
         "description": "Tremix à la frontière du rock, de la world et de l'électro élabore une tambouille loufoque et chaleureuse. Des textes en français dans une gouaille alterno avérée proposent un regard épicé sur le monde. Tandis que les mélodies trimbalent des accents nomades, du reggae-swing aux balkan beat, du ska au klezmer, des séquences électroniques invitent les cuivres, les accordéons à rejoindre les musiciens sur scène. Depuis 2011, le groupe a donné près de 150 concerts, des guinguettes aux festivals et partagé la scène avec de nombreux artistes : Zulu 9.30, Karimouche, Le Pied de la Pompe, Egypt, Elektrik Geisha, Dj Tagada et Thomas Feterman (La Caravane Passe), Muyayo Rif, Bob's not Dead, Rococo, Projet Lafaille et bien d'autres encore... Après avoir sillonné la France du nord au Sud et jusqu'à l'Espagne, toujours surprenants, ils repartent vers de nouvelles aventures trépidantes. A re-découvrir en live pour un spectacle festif, décalé et définitivement très mixé. Ça va malaxer sur la piste !",
         "genre": "Ska Rock Electro Balkan",
-        "picture": "tremix1.jpg",
+        "picture": "tremix.jpg",
         "youtube_dual_video": [{
-            "url_video_1": "https://www.youtube-nocookie.com/embed/QoXeM6yELmk",
+            "url_video_1": "https://www.youtube-nocookie.com/embed/lYg8JK-E-FI",
             "url_video_2": "https://www.youtube-nocookie.com/embed/jzltTvyaV44"
+        }, {
+            "url_video_1": "https://www.youtube-nocookie.com/embed/QoXeM6yELmk",
+            "url_video_2": "https://www.youtube-nocookie.com/embed/RPRpgefOfFs"
         }]
     }
 }, {
@@ -74,7 +77,7 @@
     "artiste": {
         "nom": "Tofigniol (Rat 100 blé)",
         "url": "https://www.facebook.com/media/set/?set=a.410439445702220.97030.341225682623597&type=3",
-        "url_describe": "A trouver",
+        "url_describe": "Facebook",
         "id": "",
         "description": "Dub Dubstep D&B",
         "genre": "Dub Dubstep D&B",
