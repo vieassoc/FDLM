@@ -79,8 +79,8 @@
         "url": "https://www.facebook.com/media/set/?set=a.410439445702220.97030.341225682623597&type=3",
         "url_describe": "Facebook",
         "id": "",
-        "description": "Dub Dubstep D&B",
-        "genre": "Dub Dubstep D&B",
+        "description": "Electro tek",
+        "genre": "Electro tek",
         "picture": "tofigniol.jpg"
     }
 }, {
@@ -91,8 +91,8 @@
         "url": "https://soundcloud.com/splinter-mav",
         "url_describe": "Soundcloud",
         "id": "",
-        "description": "Emissaire du collectif Faut que ça pousse! Amateur de musique éléctronique en particulier de Drum&Bass depuis son adolescence, il a commencé à mixer sur vinyls il y a quelques années.",
-        "genre": "Electro Tek",
+        "description": "Emissaire du collectif Faut que ça pousse! Amateur de musique éléctronique en particulier de Drum&Bass depuis son adolescence, il a commencé à mixer sur vinyls il y a quelques années. Dub Dubstep D&B",
+        "genre": "Dub Dubstep D&B",
         "soundcloud_tracks": [{
             "url": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/120496453"
         }, {
@@ -128,8 +128,7 @@
         "genre": "Rock",
         "picture": "ASAP.jpg",
         "youtube_dual_video": [{
-            "url_video_1": "https://www.youtube-nocookie.com/embed/D9DYpWNU55E",
-            "url_video_2": "https://www.youtube-nocookie.com/embed/uJfI40sLREY"
+            "url_video_1": "https://www.youtube-nocookie.com/embed/D9DYpWNU55E"
         }]
 
     }
