@@ -12,6 +12,7 @@
 				<div class="col-sm-4 col-xs-12 picture">
 					<img ng-if="!programmation.artiste.picture" ng-src="img/placeholder/500x500.gif" style="width:100%;" alt="photo">
 					<img ng-if="programmation.artiste.picture" ng-src="img/artistes/{{programmation.artiste.picture}}" style="width:100%;" alt="photo"/>
+					<h6>{{programmation.artiste.genre}}</h6>
 				</div>
 				<div class="col-sm-8 col-xs-12">
 					<h2>{{programmation.artiste.nom}}</h2>
