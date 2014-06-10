@@ -23,7 +23,7 @@
 		<div class="l-subsection-h">
 			<div class="l-subsection-hh g-html i-cf">
 			
-				<h2>Le festival 2014 <strong>Ariège'N Zic</strong> débutera dans<br>
+				<h2>Le festival 2014 <strong>Ariège'N Zic</strong> <span id="verb">débutera</span> dans<br>
 				<span id="countdown">
 				</span>
 				<div>
@@ -193,7 +193,13 @@
 
 	// set the date we're counting down to
 	var target_date = new Date("Jun 13, 2014 20:30:00").getTime();
-	 
+	if (target_date < new Date().getTime()) {
+		target_date = new Date("Jun 15, 2014 08:00:00").getTime();
+		$("#verb").text("finira")
+		if (target_date < new Date().getTime()) {
+			$("#parallax_subsection_1").hide();
+		}
+	}
 	// variables for time units
 	var days, hours, minutes, seconds;
 	 

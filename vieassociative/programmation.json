@@ -101,6 +101,22 @@
         "picture": "splinter.jpg"
     }
 }, {
+    "date_start": "2014-06-14T17:30:00",
+    "date_end": "2014-06-14T19:00:00",
+    "artiste": {
+        "nom": "Arkiris",
+        "url": "https://www.facebook.com/pages/Arkiris/216167828573331",
+        "url_describe": "Facebook",
+        "id": "",
+        "description": "Le trio Arkiris est un joyeux mélange de leurs influences musicales éclectiques. Ces jeunes musiciens partagent leur joie de vivre, leur énergie débordante et leurs rythmes, du gypsy folk au world music en passant par le reggae et la pop. La guitare, la harpe celtique et la contrebasse créent un son original, sans oublier les voix bien sûr avec des textes sensibles et engagés tissant compositions et arrangements étonnants! Un concert à ne pas rater! ",
+        "genre": "Gipsy folk world music",
+        "picture": "arkisis.jpg",
+        "youtube_dual_video": [{
+            "url_video_1": "https://www.youtube-nocookie.com/embed/P0mHKKni3O0",
+            "url_video_2": "https://www.youtube-nocookie.com/embed/KuWFIH64ILE"
+        }]
+    }
+}, {
     "date_start": "2014-06-14T19:00:00",
     "date_end": "2014-06-14T21:00:00",
     "artiste": {
